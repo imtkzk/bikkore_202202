@@ -1,0 +1,36 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- video - */
+
+.video li:nth-child(n + 2) {
+  margin-top: vw-sp(40);
+}
+
+.video-box {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .video li:nth-child(n + 2) {
+    margin-top: vw-pc(20);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .video li:nth-child(n + 2) {
+    margin-top: 20px;
+  }
+}

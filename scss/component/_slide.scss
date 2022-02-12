@@ -1,0 +1,86 @@
+// main: ../style.scss;
+
+/* ------------------------------------------- slide - */
+
+.ad {
+  position: relative;
+  background-color: $color-base;
+}
+
+.ad-slide {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.ad .swiper-slide img {
+  @include ofi;
+  height: vw-sp(400);
+}
+
+.slide-pagination {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: vw-sp(75);
+}
+
+.slide-pagination .swiper-pagination-bullet {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: vw-sp(16);
+  height: vw-sp(16);
+  background-color: #ffebcf;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.slide-pagination .swiper-pagination-bullet:nth-child(n + 2) {
+  margin-left: vw-sp(50);
+}
+
+.slide-pagination .swiper-pagination-bullet-active {
+  background-color: $color-main;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .ad .swiper-slide img {
+    height: vw-pc(400);
+  }
+
+  .slide-pagination {
+    height: vw-pc(50);
+  }
+
+  .slide-pagination .swiper-pagination-bullet {
+    width: vw-pc(8);
+    height: vw-pc(8);
+  }
+
+  .slide-pagination .swiper-pagination-bullet:nth-child(n + 2) {
+    margin-left: vw-pc(30);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .ad .swiper-slide img {
+    height: 400px;
+  }
+
+  .slide-pagination {
+    height: 50px;
+  }
+
+  .slide-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+
+  .slide-pagination .swiper-pagination-bullet:nth-child(n + 2) {
+    margin-left: 30px;
+  }
+}

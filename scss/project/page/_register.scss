@@ -1,0 +1,269 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- register - */
+
+.register-box {
+  margin-top: vw-sp(45);
+  padding: vw-sp(115) vw-sp(30);
+  background-color: $color-base;
+}
+
+.register-box-head {
+  margin-bottom: vw-sp(75);
+  font-size: vw-sp(32);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.register {
+  padding: 0 vw-sp(30) vw-sp(85) vw-sp(30);
+  background-color: #f8f8f8;
+  border: 1px solid $color-green;
+}
+
+.register-form {
+  margin-bottom: vw-sp(50);
+}
+
+.register-form dt {
+  position: relative;
+  margin-bottom: .8em;
+  padding-top: vw-sp(60);
+  display: inline-block;
+  font-size: vw-sp(32);
+  font-weight: 700;
+}
+
+.register-form dt:after {
+  content: '：';
+}
+
+.register-form dd {
+  position: relative;
+  padding: 0 0 vw-sp(60) 0;
+  width: 100%;
+  font-size: vw-sp(32);
+}
+
+.register-form dd:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+  height: vw-sp(6);
+  background-image: url(../img/common/line.png);
+  background-size: auto vw-sp(6);
+  background-repeat: repeat-x;
+}
+
+.register-form-default {
+  line-height: vw-sp(76);
+}
+
+.register-form .form-hosoku {
+  text-align: right !important;
+}
+
+.register-cautions .register-caution:nth-child(n + 2) {
+  margin-top: vw-sp(60);
+}
+
+.register-caution {
+  padding: vw-sp(50) vw-sp(40);
+  height: vw-sp(630);
+  background-color: $color-base;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.register-caution-head {
+  margin-bottom: 1.5em;
+  font-size: vw-sp(32);
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+.register-caution-desc p {
+  font-size: vw-sp(26);
+  line-height: 2em;
+}
+
+.register-caution-desc p:nth-child(n + 2) {
+  margin-top: 1.5em;
+}
+
+.register-submit-btn {
+  margin: 0 auto;
+  width: vw-sp(510);
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .register-box {
+    margin-left: vw-sp(-30);
+    width: vw-sp(750);
+  }
+
+  .register-form dd:nth-child(2) input {
+    width: vw-sp(460) !important;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .register-box {
+    margin-top: vw-pc(45);
+    padding: vw-pc(60);
+  }
+
+  .register-box-head {
+    margin-bottom: vw-pc(50);
+    font-size: vw-pc(16);
+  }
+
+  .register {
+    padding: 0 vw-pc(40) vw-pc(60) vw-pc(40);
+  }
+
+  .register-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: vw-pc(30);
+  }
+
+  .register-form dt {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+    width: vw-pc(210);
+    font-size: vw-pc(16);
+  }
+
+  .register-form dt:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    height: vw-pc(3);
+    background-image: url(../img/common/line.png);
+    background-size: auto vw-pc(3);
+    background-repeat: repeat-x;
+  }
+
+  .register-form dd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: vw-pc(30) vw-pc(15);
+    width: calc(100% - #{vw-pc(210)});
+    font-size: vw-pc(16);
+  }
+
+  .register-form dd:before {
+    height: vw-pc(3);
+    background-size: auto vw-pc(3);
+  }
+
+  .register-form-default {
+    line-height: vw-pc(40);
+  }
+
+  .register-form .form-hosoku {
+    margin: 0 !important;
+  }
+
+  .register-cautions .register-caution:nth-child(n + 2) {
+    margin-top: vw-pc(30);
+  }
+
+  .register-caution {
+    padding: vw-pc(30) vw-pc(20);
+    height: vw-pc(215);
+  }
+
+  .register-caution-head {
+    font-size: vw-pc(16);
+  }
+
+  .register-caution-desc p {
+    font-size: vw-pc(13);
+  }
+
+  .register-submit-btn {
+    width: vw-pc(400);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .register-box {
+    margin-top: 45px;
+    padding: 60px;
+  }
+
+  .register-box-head {
+    margin-bottom: 50px;
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .register {
+    padding: 0 40px 60px 40px;
+  }
+
+  .register-form {
+    margin-bottom: 30px;
+  }
+
+  .register-form dt {
+    width: 190px;
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .register-form dt:before {
+    height: 3px;
+    background-size: auto 3px;
+  }
+
+  .register-form dd {
+    padding: 30px 15px;
+    width: calc(100% - 190px);
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .register-form dd:before {
+    height: 3px;
+    background-size: auto 3px;
+  }
+
+  .register-form-default {
+    line-height: 40px;
+  }
+
+  .register-cautions .register-caution:nth-child(n + 2) {
+    margin-top: 30px;
+  }
+
+  .register-caution {
+    padding: 30px 20px;
+    height: 215px;
+  }
+
+  .register-caution-head {
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .register-caution-desc p {
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .register-submit-btn {
+    width: 400px;
+  }
+}

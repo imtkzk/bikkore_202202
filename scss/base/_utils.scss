@@ -1,0 +1,22 @@
+// main: ../style.scss
+
+/* ------------------------------------------- utils - */
+
+.img--fit {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+  .none--sp { display: none  !important; }
+  .br--pc { display: none; }
+  .br--sp { display: block; }
+}
+
+
+@media screen and (min-width: $breakpoint1) {
+  .none--pc { display: none  !important;}
+  .br--pc { display: block; }
+  .br--sp { display: none; }
+}

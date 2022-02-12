@@ -1,0 +1,45 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- banner - */
+.smsPasscode{
+}
+.smsPasscode input{
+  width: vw-sp(550);
+  font-weight: 600;
+  font-size: vw-sp(48);
+  letter-spacing: vw-sp(64);
+}
+.smsPasscode .entry-form-dd{
+  background: url("../img/common/passbg.png") no-repeat;
+  background-size: contain;
+  height: vw-sp(100);
+  padding: vw-sp(20);
+}
+
+@media screen and (min-width: $breakpoint1) {
+  .smsPasscode{
+  }
+  .smsPasscode input{
+    width: vw-pc(280);
+    font-size: vw-pc(24);
+    letter-spacing: vw-pc(32);
+  }
+  .smsPasscode .entry-form-dd{
+    height: vw-pc(50);
+    padding: vw-pc(10);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+  .smsPasscode{
+  }
+  .smsPasscode input{
+    width: 280px;
+    font-size: 24px;
+    letter-spacing: 32px;
+  }
+  .smsPasscode .entry-form-dd{
+    height: 50px;
+    padding: 10px;
+  }
+}

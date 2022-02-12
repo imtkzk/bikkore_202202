@@ -1,0 +1,109 @@
+// main: ../style.scss;
+
+/* ------------------------------------------- breadcrumb - */
+
+.breadcrumb {
+  display: flex;
+  margin: 0 auto;
+  width: vw-sp(690);
+  padding-bottom: 1.5em;
+}
+
+.breadcrumb li {
+  position: relative;
+  padding: 0 1.5em .3em 0;
+  color: #888;
+  font-size: vw-sp(22);
+  text-align: left;
+  line-height: 1.4em;
+  white-space: nowrap;
+}
+
+.breadcrumb li:nth-child(n + 2) {
+  margin-left: 1.5em;
+}
+
+.breadcrumb li:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  display: inline-block;
+  width: vw-sp(12);
+  height: vw-sp(18);
+  background-image: url(../img/common/arrow-og.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+}
+
+.breadcrumb li:last-child:after {
+  content: none;
+}
+
+.breadcrumb li a {
+  position: relative;
+  display: inline-block;
+  color: $color-main;
+  transition: .3s;
+}
+
+.breadcrumb li a:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -.3em;
+  width: 100%;
+  height: 1px;
+  background-color: $color-main;
+}
+
+.breadcrumb li a:hover {
+  color: $color-text;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .breadcrumb {
+    align-items: flex-start;
+    margin-bottom: vw-pc(30);
+    padding-bottom: 0;
+    width: vw-pc(1200);
+    @include ellipsis;
+  }
+
+  .breadcrumb li {
+    font-size: vw-pc(11);
+  }
+
+  .breadcrumb li:after {
+    width: vw-pc(6);
+    height: vw-pc(9);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .breadcrumb {
+    margin-bottom: 30px;
+    width: 1200px;
+  }
+
+  .breadcrumb li {
+    font-size: 11px; font-size: 1.1rem;
+  }
+
+  .breadcrumb li:after {
+    width: 6px;
+    height: 9px;
+  }
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .breadcrumb {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+}

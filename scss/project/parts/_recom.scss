@@ -1,0 +1,111 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- recom - */
+
+.recom-box {
+  padding: vw-sp(45) vw-sp(30);
+  background-color: $color-base;
+}
+
+.recom > li a {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: vw-sp(45) 0;
+  transition: .3s;
+}
+
+.recom > li:first-child a {
+  padding-top: 0;
+}
+
+.recom > li a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+  height: vw-sp(6);
+  background-image: url(../img/common/line.png);
+  background-size: auto vw-sp(6);
+  background-repeat: repeat-x;
+}
+
+.recom-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: vw-sp(60);
+  height: vw-sp(60);
+  background-color: #e5e5e5;
+  border-radius: 50%;
+}
+
+.recom > li:nth-child(1) .recom-num,
+.recom > li:nth-child(2) .recom-num {
+  background-color: #fcff00;
+}
+
+.recom-num p {
+  font-family: $font2;
+  font-size: vw-sp(22);
+  font-weight: 800;
+  text-align: center;
+  span {
+    font-size: 1.6em;
+    font-style: italic;
+  }
+}
+
+.recom-image {
+  width: vw-sp(120);
+  img {
+    @include ofi;
+    height: vw-sp(120);
+  }
+}
+
+.recom-content {
+  width: vw-sp(490);
+}
+
+.recom-title {
+  margin-bottom: .2em;
+  color: $color-main;
+  font-size: vw-sp(30);
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+.recom-desc {
+  padding-bottom: .5em;
+  color: #888;
+  font-size: vw-sp(22);
+  line-height: 1.36em;
+}
+
+.recom-price {
+  font-size: vw-sp(22);
+  font-weight: 700;
+  text-align: right;
+  line-height: 1.6em;
+  span {
+    display: inline-block;
+    margin-right: .1em;
+    font-family: $font2;
+    font-size: 1.86em;
+    font-weight: 800;
+  }
+  .red {
+    color: $color-red;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .recom-box {
+    display: none;
+  }
+}

@@ -1,0 +1,40 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- banner - */
+
+.banner {
+  display: flex;
+  margin-bottom: vw-sp(40);
+}
+
+.banner li{
+  margin-right: vw-sp(10);
+}
+.banner li:last-child{
+  margin-right: 0;
+}
+.banner li a {
+  display: block;
+  transition: .3s;
+}
+
+@media screen and (min-width: $breakpoint1) {
+  .banner {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .banner li{
+    margin-right: 0;
+  }
+  .banner li:nth-child(n + 2) {
+    margin-top: vw-pc(20);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .banner li:nth-child(n + 2) {
+    margin-top: 20px;
+  }
+}

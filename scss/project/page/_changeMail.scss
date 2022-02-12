@@ -1,0 +1,147 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- changeMail - */
+
+.changeMail-box {
+  padding: 0 vw-sp(30) vw-sp(70) vw-sp(30);
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  line-height: 1.5em;
+}
+
+.changeMail {
+  margin-bottom: vw-sp(60);
+}
+
+.changeMail > li {
+  position: relative;
+  padding: vw-sp(60) 0;
+}
+
+.changeMail > li:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+  height: vw-sp(6);
+  background-image: url(../img/common/line.png);
+  background-size: auto vw-sp(6);
+  background-repeat: repeat-x;
+}
+
+.changeMail-title {
+  margin-bottom: 1.5em;
+  font-size: vw-sp(32);
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+.changeMail-content {
+  font-size: vw-sp(30);
+  line-height: 1.5em;
+}
+
+.changeMail-submit-btn {
+  margin: 0 auto;
+  width: vw-sp(510);
+  button{
+  display: block;
+  height: 18vw;
+  }
+}
+.changeMail-edit-btn{
+  margin: vw-sp(60) auto 0;
+  width: vw-sp(200);
+  button{
+    background-color: #f8f8f8;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .changeMail-box {
+    padding: 0 vw-pc(40) vw-pc(60) vw-pc(40);
+  }
+
+  .changeMail {
+    margin-bottom: vw-pc(40);
+  }
+
+  .changeMail > li {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: vw-pc(50) 0;
+  }
+  .changeMail > li.changeMail-textarea {
+    align-items: flex-start;
+  }
+  .changeMail > li:after {
+    height: vw-pc(3);
+    background-size: auto vw-pc(3);
+  }
+
+  .changeMail-title {
+    margin-bottom: 0;
+    padding-right: 1em;
+    width: vw-pc(260);
+    font-size: vw-pc(16);
+  }
+
+  .changeMail-content {
+    padding: 0 1em;
+    width: vw-pc(400);
+    font-size: vw-pc(15);
+  }
+  .changeMail-submit-btn {
+    width: vw-pc(400);
+    button{
+      height: vw-pc(60);
+    }
+  }
+  .changeMail-edit-btn{
+    margin: vw-pc(30) auto 0;
+    width: vw-pc(100);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .changeMail-box {
+    padding: 0 40px 60px 40px;
+  }
+
+  .changeMail {
+    margin-bottom: 40px;
+  }
+
+  .changeMail > li {
+    padding: 50px 0;
+  }
+
+  .changeMail > li:after {
+    height: 3px;
+    background-size: auto 3px;
+  }
+  .changeMail-title {
+    width: 260px;
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  .changeMail-content {
+    width: 400px;
+    font-size: 16px;
+  }
+  .changeMail-submit-btn {
+    width: 400px;
+    button{
+      height: 60px;
+    }
+  }
+  .changeMail-edit-btn{
+    margin: 30px auto 0;
+    width: 100px;
+  }
+}

@@ -1,0 +1,816 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- profile - */
+
+/* ------------------------------------------- profile main - */
+
+.profile-main {
+  margin-bottom: vw-sp(60);
+}
+
+.profile-data {
+  padding: vw-sp(40) vw-sp(50) vw-sp(70) vw-sp(50);
+  border: 1px solid $color-main;
+  background-color: $color-thin;
+}
+
+.profile-id {
+  margin-bottom: 1.5em;
+  font-size: vw-sp(32);
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+.profile-keep {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto vw-sp(60) auto;
+}
+
+.profile-keep li {
+  width: vw-sp(340);
+  text-align: center;
+}
+
+.profile-keep-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  color: $color-base;
+  font-size: vw-sp(32);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.profile-keep li:nth-child(1) .profile-keep-head {
+  background-color: $color-green;
+}
+
+.profile-keep li:nth-child(2) .profile-keep-head {
+  background-color: #bbb;
+}
+
+.profile-keep-price {
+  position: relative;
+  display: inline-block;
+  margin-bottom: .7em;
+  padding-bottom: .5em;
+  font-size: vw-sp(26);
+  font-weight: 700;
+  text-align: center;
+  span {
+    position: relative;
+    display: inline-block;
+    margin-bottom: .2em;
+    font-family: $font2;
+    font-size: 2.13em;
+    font-weight: 800;
+  }
+}
+
+.profile-keep li:nth-child(1) .profile-keep-price span {
+  color: $color-green;
+}
+
+.profile-keep li:nth-child(2) .profile-keep-price span {
+  color: #bbb;
+}
+
+.profile-keep-price:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $color-green;
+}
+
+.profile-keep li:nth-child(1) .profile-keep-price:after {
+  background-color: $color-green;
+}
+
+.profile-keep li:nth-child(2) .profile-keep-price:after {
+  background-color: #bbb;
+}
+
+.profile-keep-fair {
+  font-size: vw-sp(26);
+  font-weight: 700;
+  text-align: center;
+}
+
+.profile-friend {
+  padding: 0 vw-sp(15);
+  width: 100%;
+  background-color: $color-base;
+}
+
+.profile-btn {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.profile-friend li {
+  position: relative;
+  padding: 0 vw-sp(30);
+  width: 50%;
+}
+
+.profile-friend li:before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+}
+
+.profile-friend li:last-child:before {
+  content: none;
+}
+
+.profile-friend-head {
+  margin-bottom: 1em;
+  font-size: vw-sp(30);
+  font-weight: 700;
+}
+
+.profile-friend-people {
+  position: relative;
+  text-align: center;
+}
+
+.profile-friend-people-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: vw-sp(180);
+  height: vw-sp(180);
+  background-color: #fcff00;
+  border-radius: 50%;
+  color: $color-main;
+  font-family: $font2;
+  font-size: vw-sp(64);
+  font-weight: 800;
+}
+
+.profile-friend-people-unit {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: vw-sp(36);
+  font-weight: 700;
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .profile-data {
+    margin: 0 0  vw-sp(65) vw-sp(-50);
+    width: vw-sp(790);
+  }
+
+  .profile-keep-head {
+    padding: .5em 0;
+  }
+
+  .profile-keep li:nth-child(1) .profile-keep-price {
+    color: $color-green;
+  }
+
+  .profile-keep li:nth-child(2) .profile-keep-price {
+    color: #bbb;
+  }
+
+  .profile-friend {
+    display: flex;
+    margin-left: vw-sp(-30);
+    padding: vw-sp(30) 0;
+    width: vw-sp(750);
+  }
+
+  .profile-friend li:before {
+    top: 0;
+    right: 0;
+    width: vw-sp(6);
+    height: 100%;
+    background-image: url(../img/common/line-ver.png);
+    background-size: vw-sp(6) auto;
+    background-repeat: repeat-y;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .profile-main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: vw-pc(30);
+  }
+
+  .profile-data {
+    padding: vw-pc(40);
+    width: vw-pc(740);
+  }
+
+  .profile-id {
+    font-size: vw-pc(16);
+  }
+
+  .profile-keep {
+    margin: 0 auto vw-pc(30) auto;
+    width: vw-pc(570);
+  }
+
+  .profile-keep li {
+    width: vw-pc(260);
+  }
+
+  .profile-keep-head {
+    height: vw-pc(40);
+    font-size: vw-pc(16);
+  }
+
+  .profile-keep-price {
+    font-size: vw-pc(15);
+    span {
+      margin: 0 .2em 0 0;
+    }
+  }
+
+  .profile-keep-fair {
+    font-size: vw-pc(13);
+  }
+
+  .profile-friend {
+    padding: 0 vw-pc(17);
+    width: vw-pc(210);
+  }
+
+  .profile-btn {
+    width: vw-pc(400);
+  }
+
+  .profile-friend li {
+    padding: vw-pc(20) 0;
+    width: 100%;
+  }
+
+  .profile-friend li:before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: vw-pc(3);
+    background-image: url(../img/common/line.png);
+    background-size: auto vw-pc(3);
+    background-repeat: repeat-x;
+  }
+
+  .profile-friend-head {
+    font-size: vw-pc(15);
+  }
+
+  .profile-friend-people-num {
+    width: vw-pc(90);
+    height: vw-pc(90);
+    font-size: vw-pc(32);
+  }
+
+  .profile-friend-people-unit {
+    font-size: vw-pc(18);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .profile-main {
+    margin-bottom: 30px;
+  }
+
+  .profile-data {
+    padding: 40px;
+    width: 740px;
+  }
+
+  .profile-id {
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .profile-keep {
+    margin: 0 auto 30px auto;
+    width: 570px;
+  }
+
+  .profile-keep li {
+    width: 260px;
+  }
+
+  .profile-keep-head {
+    height: 40px;
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .profile-keep-price {
+    font-size: 15px; font-size: 1.5rem;
+  }
+
+  .profile-keep-fair {
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .profile-friend {
+    padding: 0 17px;
+    width: 210px;
+  }
+
+  .profile-btn {
+    width: 400px;
+  }
+
+  .profile-friend li {
+    padding: 20px 0;
+  }
+
+  .profile-friend li:before {
+    height: 3px;
+    background-size: auto 3px;
+  }
+
+  .profile-friend-head {
+    font-size: 15px; font-size: 1.5rem;
+  }
+
+  .profile-friend-people-num {
+    width: 90px;
+    height: 90px;
+    font-size: 32px; font-size: 3.2rem;
+  }
+
+  .profile-friend-people-unit {
+    font-size: 18px; font-size: 1.8rem;
+  }
+
+}
+
+
+/* ------------------------------------------- profile lists- */
+
+.profile-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: vw-sp(40);
+}
+
+.profile-tabs li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: vw-sp(345);
+  height: vw-sp(100);
+  border: 1px solid $color-main;
+  color: $color-main;
+  font-size: vw-sp(30);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.profile-tabs li:nth-child(1) {
+  border-radius: vw-sp(10) 0 0 vw-sp(10);
+}
+
+.profile-tabs li:nth-child(2) {
+  border-radius: 0 vw-sp(10) vw-sp(10) 0;
+}
+
+.profile-tabs li.is-active {
+  background-color: $color-main;
+  color: $color-base;
+}
+
+.profile-tabs li.is-active:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: vw-sp(20) vw-sp(23) 0 vw-sp(23);
+  border-color: $color-main transparent transparent transparent;
+  transform: translateX(-50%);
+}
+
+.profile-tabcontent {
+  display: none;
+  padding: vw-sp(40) vw-sp(30);
+  background-color: $color-base;
+}
+
+.profile-tabcontent.is-active {
+  display: block;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .profile-tabs {
+    margin-bottom: vw-pc(25);
+  }
+
+  .profile-tabs li {
+    width: vw-pc(485);
+    height: vw-pc(50);
+    font-size: vw-pc(15);
+  }
+
+  .profile-tabs li:nth-child(1) {
+    border-radius: vw-pc(5) 0 0 vw-pc(5);
+  }
+
+  .profile-tabs li:nth-child(2) {
+    border-radius: 0 vw-pc(5) vw-pc(5) 0;
+  }
+
+  .profile-tabs li.is-active:after {
+    border-width: vw-pc(15) vw-pc(13) 0 vw-pc(13);
+  }
+
+  .profile-tabcontent {
+    padding: vw-pc(40);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .profile-tabs {
+    margin-bottom: 25px;
+  }
+
+  .profile-tabs li {
+    width: 485px;
+    height: 50px;
+    font-size: 15px; font-size: 1.5rem;
+  }
+
+  .profile-tabs li:nth-child(1) {
+    border-radius: 5px 0 0 5px;
+  }
+
+  .profile-tabs li:nth-child(2) {
+    border-radius: 0 5px 5px 0;
+  }
+
+  .profile-tabs li.is-active:after {
+    border-width: 15px 13px 0 13px;
+  }
+
+  .profile-tabcontent {
+    padding: 40px;
+  }
+}
+
+
+/* ------------------------------------------- btc tab- */
+
+.btc-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: vw-sp(30);
+}
+
+.btc-tabs li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: vw-sp(190);
+  height: vw-sp(80);
+  border: 1px solid $color-main;
+  border-radius: vw-sp(10);
+  color: $color-main;
+  font-size: vw-sp(30);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btc-tabs li.is-active {
+  background-color: $color-main;
+  color: $color-base;
+}
+
+.btc-tabcontent {
+  display: none;
+}
+
+.btc-tabcontent.is-active {
+  display: block;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .btc-tabs {
+    margin-bottom: vw-pc(15);
+  }
+
+  .btc-tabs li {
+    width: vw-pc(270);
+    height: vw-pc(40);
+    border-radius: vw-pc(5);
+    font-size: vw-pc(15);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .btc-tabs {
+    margin-bottom: 15px;
+  }
+
+  .btc-tabs li {
+    width: 270px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px; font-size: 1.5rem;
+  }
+}
+
+
+/* ------------------------------------------- btc detail - */
+
+.btc-detail > li {
+  position: relative;
+}
+
+.btc-detail > li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+  height: vw-sp(6);
+  background-image: url(../img/common/line.png);
+  background-size: auto vw-sp(6);
+  background-repeat: repeat-x;
+}
+
+
+.btc-detail > li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: vw-sp(35) 0;
+  transition: .3s;
+}
+
+.btc-detail-heads {
+  width: vw-sp(460);
+}
+
+.btc-detail-date {
+  margin-bottom: .5em;
+  font-size: vw-sp(26);
+}
+
+.btc-detail-title {
+  font-size: vw-sp(32);
+  font-weight: 700;
+  line-height: 1.5em;
+}
+.l-btc-detail-price{
+  display: flex;
+}
+.btc-detail-price {
+  width: vw-sp(145);
+  font-size: vw-sp(22);
+  font-weight: 700;
+  line-height: 1.5em;
+  margin-left: vw-sp(10);
+  span {
+    display: inline-block;
+    font-family: $font2;
+    font-size: 1.6em;
+    font-weight: 800;
+  }
+  span.green {
+    color: $color-green;
+  }
+  span.red {
+    color: $color-red;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .btc-detail > li:before {
+    height: vw-pc(3);
+    background-size: auto vw-pc(3);
+  }
+
+
+  .btc-detail > li a {
+    align-items: center;
+    padding: vw-pc(25) 0;
+  }
+
+  .btc-detail-heads {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: vw-pc(590);
+  }
+
+  .btc-detail-date {
+    margin-bottom: 0;
+    width: vw-pc(130);
+    font-size: vw-pc(13);
+  }
+
+  .btc-detail-title {
+    width: calc(100% - #{vw-pc(130)});
+    font-size: vw-pc(16);
+  }
+
+  .btc-detail-price {
+    width: vw-pc(235);
+    font-size: vw-pc(15);
+    text-align: right;
+    margin-left: vw-pc(10);
+    span {
+      margin-right: .2em;
+    }
+  }
+}
+
+
+@media screen and (min-width: $breakpoint2) {
+
+  .btc-detail > li:before {
+    height: 3px;
+    background-size: auto 3px;
+  }
+
+  .btc-detail > li a {
+    padding: 25px 0;
+  }
+
+  .btc-detail-heads {
+    width: 590px;
+  }
+
+  .btc-detail-date {
+    width: 130px;
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .btc-detail-title {
+    width: calc(100% - 130px);
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .btc-detail-price {
+    width: 235px;
+    font-size: 15px; font-size: 1.5rem;
+    margin-left: 10px;
+  }
+}
+
+
+/* ------------------------------------------- btc history - */
+
+.btc-his > li {
+  position: relative;
+}
+
+.btc-his > li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+  height: vw-sp(6);
+  background-image: url(../img/common/line.png);
+  background-size: auto vw-sp(6);
+  background-repeat: repeat-x;
+}
+
+.btc-his > li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: vw-sp(35) 0;
+  transition: .3s;
+}
+
+.btc-his-heads {
+  width: vw-sp(340);
+}
+
+.btc-his-date {
+  margin-bottom: .5em;
+  font-size: vw-sp(26);
+}
+
+.btc-his-title {
+  font-size: vw-sp(32);
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+.btc-his-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: .1em;
+  min-width: vw-sp(260);
+  height: vw-sp(60);
+  border-radius: vw-sp(30);
+  color: $color-base;
+  font-size: vw-sp(30);
+}
+
+.btc-his-status--fix {
+  background-color: $color-green;
+}
+
+.btc-his-status--prog {
+  background-color: #bbbbbb;
+}
+
+.btc-his-status--fail {
+  background-color: #ff0000;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .btc-his > li:before {
+    height: vw-pc(3);
+    background-size: auto vw-pc(3);
+  }
+
+
+  .btc-his > li a {
+    align-items: center;
+    padding: vw-pc(25) 0;
+  }
+
+  .btc-his-heads {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: vw-pc(720);
+  }
+
+  .btc-his-date {
+    margin-bottom: 0;
+    width: vw-pc(130);
+    font-size: vw-pc(13);
+  }
+
+  .btc-his-title {
+    width: calc(100% - #{vw-pc(130)});
+    font-size: vw-pc(16);
+  }
+
+  .btc-his-status {
+    min-width: vw-pc(130);
+    height: vw-pc(30);
+    border-radius: vw-pc(15);
+    font-size: vw-pc(15);
+  }
+}
+
+
+@media screen and (min-width: $breakpoint2) {
+
+  .btc-his > li:before {
+    height: 3px;
+    background-size: auto 3px;
+  }
+
+  .btc-his > li a {
+    padding: 25px 0;
+  }
+
+  .btc-his-heads {
+    width: 720px;
+  }
+
+  .btc-his-date {
+    width: 130px;
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .btc-his-title {
+    width: calc(100% - 130px);
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .btc-his-status {
+    min-width: 130px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 15px; font-size: 1.5rem;
+  }
+}

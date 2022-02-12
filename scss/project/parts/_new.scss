@@ -1,0 +1,123 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- news - */
+
+@media screen and (min-width: $breakpoint1) {
+
+  .aside-new {
+    padding: 0 vw-pc(12);
+    background-color: $color-base;
+  }
+
+  .aside-new li {
+    position: relative;
+  }
+
+  .aside-new li a {
+    display: block;
+    padding: vw-pc(20) 0;
+    transition: .3s;
+  }
+
+  .aside-new li a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    height: vw-pc(3);
+    background-image: url(../img/common/line.png);
+    background-size: auto vw-pc(3);
+    background-repeat: repeat-x;
+  }
+
+  .aside-new li:last-child a:after {
+    content: none;
+  }
+
+  .aside-new-in {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .aside-new-image {
+    width: vw-pc(50);
+    img {
+      @include ofi;
+      height: vw-pc(50);
+    }
+  }
+
+  .aside-new-content {
+    width: vw-pc(130);
+  }
+
+  .aside-new-title {
+    margin-bottom: .8em;
+    color: $color-main;
+    font-size: vw-pc(13);
+    font-weight: 700;
+    @include ellipsis;
+  }
+
+  .aside-new-desc {
+    margin-bottom: 1.8em;
+    font-size: vw-pc(11);
+    font-weight: 700;
+    @include ellipsis;
+  }
+
+  .aside-new-price {
+    margin-bottom: .8em;
+    font-size: vw-pc(11);
+    font-weight: 700;
+    text-align: right;
+    span.red {
+      margin-right: .2em;
+      color: $color-red;
+      font-family: $font2;
+      font-size: 1.63em;
+      font-weight: 800;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .aside-new {
+    padding: 0 12px;
+  }
+
+  .aside-new li a {
+    padding: 20px 0;
+  }
+
+  .aside-new li a:after {
+    height: 3px;
+    background-size: auto 3px;
+  }
+
+  .aside-new-image {
+    width: 50px;
+    img {
+      height: 50px;
+    }
+  }
+
+  .aside-new-content {
+    width: 130px;
+  }
+
+  .aside-new-title {
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .aside-new-desc {
+    font-size: 11px; font-size: 1.1rem;
+  }
+
+  .aside-new-price {
+    font-size: 11px; font-size: 1.1rem;
+  }
+}

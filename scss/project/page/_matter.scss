@@ -1,0 +1,276 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- matter - */
+
+.matter-box {
+  padding: vw-sp(60) vw-sp(30);
+  background-color: $color-base;
+}
+
+.matter {
+  margin-bottom: vw-sp(45);
+}
+
+.matter-in {
+  display: flex;
+  justify-content: space-between;
+}
+
+.matter-image {
+  width: vw-sp(200);
+  img {
+    @include ofi;
+    height: vw-sp(200);
+  }
+}
+
+.matter-content {
+  width: vw-sp(460);
+}
+
+.matter-title {
+  margin-bottom: .8em;
+  padding-bottom: .5em;
+  border-bottom: 1px solid $color-main;
+  font-size: vw-sp(40);
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+.matter-sub {
+  margin-bottom: .8em;
+  font-size: vw-sp(32);
+  font-weight: 700;
+  line-height: 1.8em;
+}
+
+.matter-time {
+  color: #888;
+  font-size: vw-sp(32);
+  line-height: 1.8em;
+}
+
+.matter-price {
+  font-size: vw-sp(36);
+  font-weight: 700;
+  text-align: right;
+  span.red {
+    margin-right: .2em;
+    color: $color-red;
+    font-family: $font2;
+    font-size: 2.66em;
+    font-weight: 800;
+  }
+}
+
+.matter-box-btn {
+  margin: 0 auto vw-sp(80) auto;
+  width: 100%;
+}
+
+.matter-descs > div:nth-child(n + 2){
+  margin-top: vw-sp(60);
+}
+
+.matter-desc p {
+  font-size: vw-sp(26);
+  line-height: 1.8em;
+}
+
+.matter-desc p:nth-child(n + 2){
+  margin-top: 1.5em;
+}
+
+.matter-subdesc-box {
+  padding: 1.5em;
+  background-color: $color-base;
+  border: 1px solid $color-main;
+}
+
+.matter-subdesc-box p {
+  font-size: vw-sp(26);
+  line-height: 1.8em;
+}
+
+.matter-subdesc-box p:nth-child(n + 2) {
+  margin-top: 1.5em;
+}
+
+.matter-list li {
+  position: relative;
+  padding-left: vw-sp(40);
+  font-size: vw-sp(26);
+  line-height: 1.8em;
+}
+
+.matter-list li:before {
+  content: '';
+  position: absolute;
+  top: .5em;
+  left: 0;
+  width: vw-sp(20);
+  height: vw-sp(20);
+  background-color: $color-main;
+  border-radius: 50%;
+}
+
+.matter-list li:nth-child(n + 2) {
+  margin-top: 1.5em;
+}
+
+.matter-btn {
+  margin: vw-sp(60) auto 0 auto;
+  width: vw-sp(550);
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .matter-box {
+    margin-left: vw-sp(-30);
+    width: vw-sp(750);
+  }
+
+  .matter-in {
+    margin-bottom: vw-sp(55);
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .matter-box {
+    padding: vw-pc(40);
+  }
+
+  .matter {
+    margin-bottom: vw-pc(40);
+  }
+
+  .matter-image {
+    width: vw-pc(200);
+    img {
+      height: vw-pc(200);
+    }
+  }
+
+  .matter-content {
+    width: vw-pc(650);
+  }
+
+  .matter-title {
+    font-size: vw-pc(24);
+  }
+
+  .matter-sub {
+    font-size: vw-pc(16);
+  }
+
+  .matter-time {
+    font-size: vw-pc(16);
+  }
+
+  .matter-price {
+    font-size: vw-pc(18);
+  }
+
+  .matter-box-btn {
+    margin: 0 auto vw-pc(60) auto;
+    width: vw-pc(600);
+  }
+
+  .matter-descs > div:nth-child(n + 2){
+    margin-top: vw-pc(60);
+  }
+
+  .matter-desc p {
+    font-size: vw-pc(13);
+  }
+
+  .matter-subdesc-box p {
+    font-size: vw-pc(13);
+  }
+
+  .matter-list li {
+    padding-left: vw-pc(20);
+    font-size: vw-pc(13);
+  }
+
+  .matter-list li:before {
+    width: vw-pc(10);
+    height: vw-pc(10);
+  }
+
+  .matter-btn {
+    margin: vw-pc(30) auto 0 auto;
+    width: vw-pc(330);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .matter-box {
+    padding: 40px;
+  }
+
+  .matter {
+    margin-bottom: 40px;
+  }
+
+  .matter-image {
+    width: 200px;
+    img {
+      height: 200px;
+    }
+  }
+
+  .matter-content {
+    width: 650px;
+  }
+
+  .matter-title {
+    font-size: 24px; font-size: 2.4rem;
+  }
+
+  .matter-sub {
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .matter-time {
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .matter-price {
+    font-size: 18px; font-size: 1.8rem;
+  }
+
+  .matter-box-btn {
+    margin: 0 auto 60px auto;
+    width: 600px;
+  }
+
+  .matter-descs > div:nth-child(n + 2){
+    margin-top: 60px;
+  }
+
+  .matter-desc p {
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .matter-subdesc-box p {
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .matter-list li {
+    padding-left: 20px;
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .matter-list li:before {
+    width: 10px;
+    height: 10px;
+  }
+
+  .matter-btn {
+    margin: 30px auto 0 auto;
+    width: 330px;
+  }
+}

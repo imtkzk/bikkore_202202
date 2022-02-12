@@ -1,0 +1,88 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- entryFix - */
+
+.entryFix-box {
+  padding: 0 vw-sp(30);
+  line-height: 1.5em;
+}
+
+.entryFix {
+  margin-bottom: vw-sp(60);
+}
+.entryFix-boxtop{
+  font-weight: 600;
+  text-align: center;
+}
+.entryFix-boxtop p{
+  font-size: vw-sp(34);
+  line-height: 2em;
+}
+.entryFix-boxtop-mail{
+  display: inline-block;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: vw-sp(30) vw-sp(80);
+  margin: vw-sp(40) 0;
+  span{
+    color: $color-green;
+  }
+}
+.entryFix-boxbottom li::before{
+  content: "※ ";
+  margin-left: -1.5rem;
+  text-indent: 1.5rem;
+}
+.entryFix-boxbottom{
+  margin-top: vw-sp(30);
+  li{
+    margin-top: vw-sp(60);
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .entryFix-box {
+    padding: 0 vw-pc(40);
+  }
+  .entryFix {
+    margin-bottom: vw-pc(40);
+  }
+  .entryFix-boxtop p{
+    font-size: vw-pc(18);
+  }
+  .entryFix-boxtop-mail{
+    padding: vw-pc(15) vw-pc(40);
+    margin: vw-pc(20) 0;
+  }
+  .entryFix-boxbottom{
+    margin-top: vw-pc(30);
+    li{
+      margin-top: vw-pc(20);
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .entryFix-box {
+    padding: 0 40px;
+  }
+
+  .entryFix {
+    margin-bottom: 40px;
+  }
+  .entryFix-boxtop p{
+    font-size: 18px;
+  }
+  .entryFix-boxtop-mail{
+    padding: 15px 40px;
+    margin: 20px 0;
+  }
+  .entryFix-boxbottom{
+    margin-top: 30px;
+    li{
+      margin-top: 20px;
+    }
+  }
+}

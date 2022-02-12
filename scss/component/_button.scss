@@ -1,0 +1,353 @@
+// main: ../style.scss;
+
+/* ------------------------------------------- btn wrapper - */
+
+.main-btn {
+  margin: vw-sp(40) auto 0 auto;
+  width: vw-sp(600);
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .main-btn {
+    margin: vw-pc(30) auto 0 auto;
+    width: vw-pc(300);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .main-btn {
+    margin: 30px auto 0 auto;
+    width: 300px;
+  }
+}
+
+
+/* ------------------------------------------- cmn btn - */
+
+.cmn-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: .1em;
+  width: 100%;
+  height: vw-sp(90);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: vw-sp(50);
+  font-family: $font1;
+  font-size: vw-sp(30);
+  font-weight: 700;
+  transition: .3s;
+}
+
+.cmn-btn--og {
+  background-color: $color-main;
+  border-color: $color-main;
+  color: $color-base;
+}
+
+.cmn-btn--og:hover {
+  background-color: $color-base;
+  color: $color-main;
+}
+
+.cmn-btn--base {
+  background-color: $color-base;
+  border-color: $color-main;
+  color: $color-main;
+}
+
+.cmn-btn--base:hover {
+  background-color: $color-main;
+  color: $color-base;
+}
+
+.cmn-btn--red {
+  background-color: $color-red;
+  border-color: $color-red;
+  color: $color-base;
+}
+
+.cmn-btn--red:hover {
+  background-color: $color-base;
+  color: $color-red;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .cmn-btn {
+    height: vw-pc(45);
+    border-radius: vw-pc(25);
+    font-size: vw-pc(15);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .cmn-btn {
+    height: 45px;
+    border-radius: 25px;
+    font-size: 15px; font-size: 1.5rem;
+  }
+}
+
+
+/* ------------------------------------------- login btn - */
+
+.login-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: .1em;
+  width: 100%;
+  height: vw-sp(60);
+  border: 1px solid $color-main;
+  border-radius: vw-sp(10);
+  color: $color-main;
+  font-family: $font1;
+  font-size: vw-sp(26);
+  font-weight: 700;
+  transition: .3s;
+}
+
+.login-btn:hover {
+  background-color: $color-main;
+  color: $color-base;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .login-btn {
+    height: vw-pc(35);
+    border-radius: vw-pc(5);
+    font-size: vw-pc(15);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .login-btn {
+    height: 35px;
+    border-radius: 5px;
+    font-size: 15px; font-size: 1.5rem;
+  }
+}
+
+
+/* ------------------------------------------- logout btn - */
+
+.logout-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: vw-sp(80);
+  background-color: #f8f8f8;
+  border: 1px solid #f8f8f8;
+  border-radius: vw-sp(40);
+  font-family: $font1;
+  font-size: vw-sp(26);
+  font-weight: 500;
+  text-align: center;
+  transition: .3s;
+}
+
+.logout-btn:hover {
+  background-color: $color-base;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .logout-btn {
+    height: vw-pc(40);
+    border-radius: vw-pc(20);
+    font-size: vw-pc(13);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .logout-btn {
+    height: 40px;
+    border-radius: 20px;
+    font-size: 13px; font-size: 1.3rem;
+  }
+}
+
+/* ------------------------------------------- apply btn - */
+
+.apply-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: $color-base;
+  font-family: $font1;
+  font-weight: 700;
+  border-radius: vw-sp(10);
+  text-align: center;
+  letter-spacing: .15em;
+  transition: .3s;
+  span {
+    color: #fcff00;
+  }
+}
+
+.apply-btn--mini {
+  height: vw-sp(60);
+  font-size: vw-sp(30);
+}
+
+.apply-btn--short {
+  height: vw-sp(90);
+  font-size: vw-sp(26);
+}
+
+.apply-btn--middle {
+  height: vw-sp(120);
+  font-size: vw-sp(36);
+}
+
+.apply-btn--hign {
+  height: vw-sp(140);
+  font-size: vw-sp(48);
+}
+
+.apply-btn--green {
+  background-color: #00c068;
+  box-shadow: 0 vw-sp(12) 0 0 #00914f;
+}
+
+.apply-btn--orange {
+  background-color: $color-main;
+  box-shadow: 0 vw-sp(12) 0 0 #e06f00;
+}
+
+.apply-btn:hover {
+  box-shadow: none;
+  transform: translate3d(0, vw-sp(12), 0);
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .apply-btn {
+    border-radius: vw-pc(5);
+    text-align: center;
+  }
+
+  .apply-btn--mini {
+    height: vw-pc(35);
+    font-size: vw-pc(15);
+  }
+
+  .apply-btn--short {
+    height: vw-pc(55);
+    font-size: vw-pc(15);
+  }
+
+  .apply-btn--middle {
+    height: vw-pc(60);
+    font-size: vw-pc(20);
+  }
+
+  .apply-btn--hign {
+    height: vw-pc(70);
+    font-size: vw-pc(28);
+  }
+
+  .apply-btn--green {
+    box-shadow: 0 vw-pc(5) 0 0 #00914f;
+  }
+
+  .apply-btn--orange {
+    box-shadow: 0 vw-pc(5) 0 0 #e06f00;
+  }
+
+  .apply-btn:hover {
+    transform: translate3d(0, vw-pc(5), 0);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .apply-btn {
+    border-radius: 5px;
+  }
+
+  .apply-btn--mini {
+    height: 35px;
+    font-size: 15px; font-size: 1.5rem;
+  }
+
+  .apply-btn--short {
+    height: 55px;
+    font-size: 15px; font-size: 1.5rem;
+  }
+
+  .apply-btn--middle {
+    height: 60px;
+    font-size: 20px; font-size: 2.0rem;
+  }
+
+  .apply-btn--hign {
+    height: 70px;
+    font-size: 28px; font-size: 2.8rem;
+  }
+
+  .apply-btn--green {
+    box-shadow: 0 5px 0 #00914f;
+  }
+
+  .apply-btn--orange {
+    box-shadow: 0 5px 0 #e06f00;
+  }
+
+  .apply-btn:hover {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
+/* ------------------------------------------- change btn - */
+
+.edit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: vw-sp(70);
+  background-color: $color-base;
+  border: 1px solid $color-main;
+  border-radius: vw-sp(10);
+  color: $color-main;
+  font-family: $font1;
+  font-size: vw-sp(30);
+  font-weight: 700;
+  transition: .3s;
+}
+
+.edit-btn:hover {
+  background-color: $color-main;
+  color: $color-base;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .edit-btn {
+    height: vw-pc(35);
+    border-radius: vw-pc(5);
+    font-size: vw-pc(15);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .edit-btn {
+    height: 35px;
+    border-radius: 5px;
+    font-size: 15px; font-size: 1.5rem;
+  }
+}

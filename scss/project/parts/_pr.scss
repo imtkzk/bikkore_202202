@@ -1,0 +1,61 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- pr - */
+
+.pr{
+  .l-pr{
+    background-color: #fff;
+    width: vw-sp(690);
+    max-width: vw-sp(690);
+    margin: vw-sp(50) auto;
+    text-align: center;
+    padding: vw-sp(50);
+    .prtitle{
+      color: $color-green;
+      font-weight: 800;
+      font-size: vw-sp(36);
+      font-family: $font2;
+      margin-bottom: vw-sp(50);
+    }
+    .google-ad-box{
+      background-color: #f8f8f8;
+      width: 100%;
+    }
+  }
+}
+@media screen and (min-width: $breakpoint1) {
+  .pr{
+  .l-pr{
+    width: vw-pc(1200);
+    max-width: 1200px;
+    margin: vw-pc(50) auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: vw-pc(50);
+    .prtitle{
+      font-size: vw-pc(36);
+      margin-bottom: 0;
+    }
+    .google-ad-box{
+      width: vw-pc(1000);
+    }
+  }
+}
+}
+@media screen and (min-width: $breakpoint2) {
+  .pr{
+  .l-pr{
+    padding: 50px;
+    width: 96%;
+    max-width: 1200px;
+    margin: 50px auto;
+    .prtitle{
+      font-size: 36px;
+    }
+    .google-ad-box{
+      width: 1000px;
+    }
+  }
+}
+}

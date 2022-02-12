@@ -1,0 +1,169 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- info - */
+
+.info-box {
+  padding: vw-sp(25) vw-sp(10) vw-sp(35) vw-sp(10);
+  background-color: $color-base;
+}
+
+.info li a {
+  position: relative;
+  display: block;
+  padding: 1.2em 0;
+  transition: .3s;
+}
+
+.info li a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+  height: vw-sp(6);
+  background-image: url(../img/common/line.png);
+  background-size: auto vw-sp(6);
+  background-repeat: repeat-x;
+}
+
+.info-new {
+  position: absolute;
+  top: 0;
+  left: vw-sp(-20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: vw-sp(100);
+  height: vw-sp(100);
+  background-color: $color-red;
+  border-radius: 50%;
+  color: $color-base;
+  font-family: $font2;
+  font-size: vw-sp(30);
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.info-heads {
+  display: flex;
+  align-items: center;
+  margin-bottom: .5em;
+}
+
+.info-date {
+  color: #888888;
+  font-family: $font2;
+  font-weight: 500;
+}
+
+.info-cat {
+  margin-left: 1em;
+  padding: .2em 1em .3em 1em;
+  background-color: #ffebcf;
+  border-radius: vw-sp(20);
+  color: $color-main;
+  font-size: vw-sp(24);
+}
+
+.info-title {
+  line-height: 1.38em;
+}
+
+.info-more {
+  margin-top: vw-sp(30);
+}
+
+.info-more a {
+  display: block;
+  color: $color-main;
+  font-size: vw-sp(30);
+  font-weight: 700;
+  text-align: center;
+  transition: .3s;
+  span {
+    position: relative;
+    display: inline-block;
+    padding-bottom: .5em;
+  }
+  span:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-main;
+  }
+}
+
+.info-more a:hover {
+  color: $color-text;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .info-box {
+    padding: vw-pc(15) vw-pc(10) vw-pc(25) vw-pc(10);
+  }
+
+  .info li a:after {
+    height: vw-pc(3);
+    background-size: auto vw-pc(3);
+  }
+
+
+  .info-new {
+    left: vw-pc(-10);
+    width: vw-pc(50);
+    height: vw-pc(50);
+    font-size: vw-pc(15);
+  }
+
+  .info-cat {
+    border-radius: vw-pc(10);
+    font-size: vw-pc(12);
+  }
+
+  .info-more {
+    margin-top: vw-pc(15);
+  }
+
+  .info-more a {
+    font-size: vw-pc(15);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .info-box {
+    padding: 15px 10px 25px 10px;
+  }
+
+  .info li a:after {
+    height: 3px;
+    background-size: auto 3px;
+  }
+
+
+  .info-new {
+    left: -10px;
+    width: 50px;
+    height: 50px;
+    font-size: 15px; font-size: 1.5rem;
+  }
+
+  .info-cat {
+    border-radius: 10px;
+    font-size: 12px; font-size: 1.2rem;
+  }
+
+  .info-more {
+    margin-top: 15px;
+  }
+
+  .info-more a {
+    font-size: 15px; font-size: 1.5rem;
+  }
+}

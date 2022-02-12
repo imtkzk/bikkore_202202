@@ -1,0 +1,417 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- transfer - */
+
+/* ------------------------------------------- member cat- */
+
+.member-cat li {
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.member-cat li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 vw-sp(80) 0 vw-sp(40);
+  height: vw-sp(100);
+  font-size: vw-sp(30);
+  font-weight: 500;
+  transition: .3s;
+}
+
+.member-cat li a:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  display: inline-block;
+  width: vw-sp(12);
+  height: vw-sp(18);
+  background-image: url(../img/common/arrow-og.png);
+  background-size: contain;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .member-cat {
+    margin-left: vw-sp(-30);
+    width: vw-sp(750);
+  }
+
+  .member-cat li a {
+    background-color: $color-base;
+  }
+
+  .member-cat li a:hover {
+    background-color: #fffbf7;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .member-cat li a {
+    padding: 0 vw-pc(40) 0 vw-pc(20);
+    height: vw-pc(45);
+    font-size: vw-pc(13);
+  }
+
+  .member-cat li a:hover {
+    background-color: $color-base;
+  }
+
+  .member-cat li a:after {
+    right: vw-pc(20);
+    width: vw-pc(6);
+    height: vw-pc(9);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .member-cat li a {
+    padding: 0 40px 0 20px;
+    height: 45px;
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .member-cat li a:after {
+    right: 20px;
+    width: 6px;
+    height: 9px;
+  }
+}
+
+
+/* ------------------------------------------- transfer box - */
+
+.transfer-box {
+  padding: vw-sp(40) vw-sp(30);
+  background-color: $color-base;
+}
+
+.transfer-keep {
+  margin-bottom: vw-sp(45);
+}
+
+.transfer-keep dt {
+  margin-bottom: .5em;
+  font-size: vw-sp(32);
+  font-weight: 700;
+}
+
+.transfer-keep dt:after {
+  content: ':'
+}
+
+.transfer-keep dd {
+  font-family: $font2;
+  font-size: vw-sp(36);
+  font-weight: 700;
+  span {
+    margin-right: .2em;
+    color: $color-green;
+    font-size: 1.77em;
+    font-weight: 800;
+  }
+}
+
+.transfer {
+  margin-bottom: vw-sp(50);
+  padding: 0 vw-sp(30) vw-sp(60) vw-sp(30);
+  background-color: #f8f8f8;
+  border: 1px solid $color-main;
+}
+
+.transfer-form {
+  margin-bottom: vw-sp(50);
+}
+
+.transfer-form dt {
+  position: relative;
+  margin-bottom: .8em;
+  padding-top: vw-sp(60);
+  display: inline-block;
+  font-size: vw-sp(32);
+  font-weight: 700;
+}
+
+.transfer-form dt:after {
+  content: '：';
+}
+
+.transfer-form dd {
+  position: relative;
+  padding: 0 0 vw-sp(60) 0;
+  width: 100%;
+  font-size: vw-sp(32);
+  font-weight: 700;
+}
+
+.transfer-form dd:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+  height: vw-sp(6);
+  background-image: url(../img/common/line.png);
+  background-size: auto vw-sp(6);
+  background-repeat: repeat-x;
+}
+
+.transfer-btc-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: vw-sp(30);
+}
+
+.transfer-btc-unit {
+  margin-left: .8em;
+  font-family: $font2;
+  font-size: vw-sp(36);
+  font-weight: 800;
+}
+
+.transfer-btc-in {
+  display: flex;
+  align-items: center;
+}
+
+.transfer-btc-btn {
+  position: relative;
+  top: vw-sp(-6);
+  width: vw-sp(130);
+}
+
+.transfer-btc-max {
+  margin-left: 1em;
+  color: $color-main;
+  font-size: vw-sp(30);
+  font-weight: 700;
+}
+
+.transfer-submit-btn {
+  margin: 0 auto;
+  width: vw-sp(510);
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .transfer-box {
+    margin-left: vw-sp(-30);
+    width: vw-sp(750);
+  }
+
+  .transfer-form dd:nth-child(2) input {
+    width: vw-sp(460) !important;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .transfer-box {
+    padding: vw-pc(40);
+  }
+
+  .transfer-keep {
+    display: flex;
+    align-items: center;
+    margin-bottom: vw-pc(30);
+  }
+
+  .transfer-keep dt {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: vw-pc(16);
+  }
+
+  .transfer-keep dd {
+    font-size: vw-pc(18);
+  }
+
+  .transfer {
+    margin-bottom: vw-pc(40);
+    padding: 0 vw-pc(40) vw-pc(45) vw-pc(40);
+  }
+
+  .transfer-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: vw-pc(30);
+  }
+
+  .transfer-form dt {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+    width: vw-pc(210);
+    font-size: vw-pc(16);
+  }
+
+  .transfer-form dt:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    height: vw-pc(3);
+    background-image: url(../img/common/line.png);
+    background-size: auto vw-pc(3);
+    background-repeat: repeat-x;
+  }
+
+  .transfer-form dd {
+    padding: vw-pc(30) vw-pc(15);
+    width: calc(100% - #{vw-pc(210)});
+    font-size: vw-pc(16);
+  }
+
+  .transfer-form dd:before {
+    height: vw-pc(3);
+    background-size: auto vw-pc(3);
+  }
+
+  .transfer-btc {
+    display: flex;
+    align-items: center;
+  }
+
+  .transfer-btc-input {
+    margin-bottom: 0;
+  }
+
+  .transfer-btc-unit {
+    font-size: vw-pc(18);
+  }
+
+  .transfer-btc-in {
+    display: flex;
+    align-items: center;
+    margin-left: vw-pc(25);
+  }
+
+  .transfer-btc-btn {
+    top: vw-pc(-3);
+    width: vw-pc(68);
+  }
+
+  .transfer-btc-max {
+    margin-left: 1em;
+    font-size: vw-pc(15);
+  }
+
+  .transfer-submit-btn {
+    width: vw-pc(320);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .transfer-box {
+    padding: 40px;
+  }
+
+  .transfer-keep {
+    margin-bottom: 30px;
+  }
+
+  .transfer-keep dt {
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .transfer-keep dd {
+    font-size: 18px; font-size: 1.8rem;
+  }
+
+  .transfer {
+    margin-bottom: 40px;
+    padding: 0 40px 45px 40px;
+  }
+
+  .transfer-form {
+    margin-bottom: 30px;
+  }
+
+  .transfer-form dt {
+    width: 190px;
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .transfer-form dt:before {
+    height: 3px;
+    background-size: auto 3px;
+  }
+
+  .transfer-form dd {
+    padding: 30px 15px;
+    width: calc(100% - 190px);
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .transfer-form dd:before {
+    height: 3px;
+    background-size: auto 3px;
+  }
+
+  .transfer-btc-unit {
+    font-size: 18px; font-size: 1.8rem;
+  }
+
+  .transfer-btc-in {
+    margin-left: 25px;
+  }
+
+  .transfer-btc-btn {
+    top: -3px;
+    width: 68px;
+  }
+
+  .transfer-btc-max {
+    font-size: 15px; font-size: 1.6rem;
+  }
+
+  .transfer-submit-btn {
+    width: 320px;
+  }
+}
+
+
+/* ------------------------------------------- member- */
+
+.transfer-list li {
+  padding-left: 2em;
+  font-size: vw-sp(26);
+  text-indent: -2em;
+  line-height: 1.8em;
+}
+
+.transfer-list li:nth-child(n + 2) {
+  margin-top: 1.5em;
+}
+
+.transfer-list li:before {
+  margin-right: 1em;
+  content: '※';
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .transfer-list li {
+    font-size: vw-pc(13);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .transfer-list li {
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+
+}

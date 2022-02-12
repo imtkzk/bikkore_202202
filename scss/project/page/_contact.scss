@@ -1,0 +1,192 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- contact - */
+
+.contact-box {
+  padding: 0 vw-sp(30) vw-sp(70) vw-sp(30);
+  background-color: #f8f8f8;
+  border: 1px solid $color-main;
+  line-height: 1.5em;
+}
+
+.contact {
+  margin-bottom: vw-sp(60);
+}
+
+.contact > li {
+  position: relative;
+  padding: vw-sp(60) 0;
+}
+
+.contact > li:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+  height: vw-sp(6);
+  background-image: url(../img/common/line.png);
+  background-size: auto vw-sp(6);
+  background-repeat: repeat-x;
+}
+
+.contact-title {
+  margin-bottom: 1.5em;
+  font-size: vw-sp(32);
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+.contact-content {
+  font-size: vw-sp(30);
+  line-height: 1.5em;
+}
+
+.contact-submit-btn {
+  margin: 0 auto;
+  width: vw-sp(510);
+}
+
+.contact-cate::after{
+  content: "▼";
+  color: $color-green;
+  font-size: vw-sp(11);
+  position: absolute;
+  right: vw-sp(30);
+  bottom: vw-sp(80);
+}
+.contact-box dl .contact-title{
+  margin-bottom: vw-sp(40);
+}
+.form .contact-cate select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.contact-box dl dd{
+  background-color: #fff;
+  width: 100%;
+  height: vw-sp(800);
+  overflow-y: scroll;
+  padding:vw-sp(40) vw-sp(40) 0 vw-sp(60);
+  ul li{
+    margin-bottom: vw-sp(40);
+    line-height: 1.8em;
+  }
+  ul li::before{
+    content: "● ";
+    color: $color-main;
+    text-indent:1.5rem;
+    margin-left: -1.5rem;
+  }
+}
+@media screen and (min-width: $breakpoint1) {
+
+  .contact-box {
+    padding: 0 vw-pc(40) vw-pc(60) vw-pc(40);
+  }
+
+  .contact {
+    margin-bottom: vw-pc(40);
+  }
+
+  .contact > li {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: vw-pc(50) 0;
+  }
+  .contact > li.contact-textarea {
+    align-items: flex-start;
+  }
+  .contact > li:after {
+    height: vw-pc(3);
+    background-size: auto vw-pc(3);
+  }
+
+  .contact-title {
+    margin-bottom: 0;
+    padding-right: 1em;
+    width: vw-pc(230);
+    font-size: vw-pc(16);
+  }
+
+  .contact-content {
+    padding: 0 1em;
+    width: vw-pc(620);
+    font-size: vw-pc(15);
+  }
+  .contact-submit-btn {
+    width: vw-pc(400);
+  }
+  .form .contact-cate select{
+      width: vw-pc(390);
+  }
+  .contact-cate::after{
+    font-size: vw-pc(11);
+    right: vw-pc(200);
+    top: vw-pc(60);
+  }
+  .contact-box dl .contact-title{
+    margin-bottom: vw-pc(20);
+  }
+  .contact-box dl dd{
+    height: vw-pc(210);
+    padding:vw-pc(20) vw-pc(20) 0 vw-pc(40);
+    ul li{
+      margin-bottom: vw-pc(20);
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .contact-box {
+    padding: 0 40px 60px 40px;
+  }
+
+  .contact {
+    margin-bottom: 40px;
+  }
+
+  .contact > li {
+    padding: 50px 0;
+  }
+
+  .contact > li:after {
+    height: 3px;
+    background-size: auto 3px;
+  }
+
+  .contact-title {
+    width: 230px;
+    font-size: 16px; font-size: 1.6rem;
+  }
+  .contact-submit-btn {
+    width: 400px;
+  }
+  .contact-content {
+    padding: 0 1em;
+    width: 620px;
+    font-size: 15px;
+  }
+  .form .contact-cate select{
+      width: 390px;
+  }
+  .contact-cate::after{
+    font-size: 11px;
+    right: 200px;
+    top: 60px;
+  }
+  .contact-box dl .contact-title{
+    margin-bottom: 20px;
+  }
+  .contact-box dl dd{
+    height: 210px;
+    padding:20px 20px 0 40px;
+    ul li{
+      margin-bottom: 20px;
+    }
+  }
+}

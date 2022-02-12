@@ -1,0 +1,122 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- entry - */
+
+.entry {
+  padding: vw-sp(100) vw-sp(60);
+  background-color: #f0fff8;
+  border: vw-sp(16) solid #dbefe6;
+}
+
+.entry-title {
+  margin-bottom: vw-sp(50);
+  font-size: vw-sp(32);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.8em;
+}
+
+.entry-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto vw-sp(45) auto;
+  width: 100%;
+}
+
+.entry-form dt {
+  margin-bottom: 1em;
+  width: 100%;
+  font-size: vw-sp(32);
+  font-weight: 700;
+}
+
+.entry-form dd {
+  width: 100%;
+}
+
+.entry-submit-btn {
+  margin: 0 auto;
+  width: vw-sp(570);
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .entry {
+    margin-left: vw-sp(-50);
+    width: vw-sp(790);
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .entry {
+    padding: vw-pc(55) vw-pc(20);
+    border: vw-pc(8) solid #dbefe6;
+  }
+
+  .entry-content {
+    margin-bottom: vw-pc(40);
+  }
+
+  .entry-title {
+    margin-bottom: vw-pc(20);
+    font-size: vw-pc(16);
+  }
+
+  .entry-form {
+    flex-wrap: nowrap;
+    margin: 0 auto vw-pc(25) auto;
+    width: vw-pc(630);
+  }
+
+  .entry-form dt {
+    margin-bottom: 0;
+    width: vw-pc(140);
+    font-size: vw-pc(16);
+  }
+
+  .entry-form dd {
+    width: vw-pc(480);
+  }
+
+  .entry-submit-btn {
+    width: vw-pc(400);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .entry {
+    padding: 55px 20px;
+    border: 8px solid #dbefe6;
+  }
+
+  .entry-content {
+    margin-bottom: 40px;
+  }
+
+  .entry-title {
+    margin-bottom: 20px;
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .entry-form {
+    margin: 0 auto 25px auto;
+    width: 630px;
+  }
+
+  .entry-form dt {
+    width: 140px;
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .entry-form dd {
+    width: 480px;
+  }
+
+  .entry-submit-btn {
+    width: 400px;
+  }
+}

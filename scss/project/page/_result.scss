@@ -1,0 +1,150 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- result - */
+
+.result li {
+  width: 100%;
+}
+
+.result li a {
+  display: flex;
+  justify-content: space-between;
+  padding: vw-sp(30);
+  background-color: $color-base;
+}
+
+.result-image {
+  width: vw-sp(140);
+  img {
+    @include ofi;
+    height: vw-sp(140);
+  }
+}
+
+.result-content {
+  width: vw-sp(460);
+}
+
+.result-title {
+  margin-bottom: .5em;
+  color: $color-main;
+  font-size: vw-sp(30);
+  font-weight: 700;
+  @include ellipsis;
+}
+
+.result-desc {
+  margin-bottom: .8em;
+  font-size: vw-sp(26);
+  font-weight: 700;
+  @include ellipsis;
+}
+
+.result-price {
+  font-size: vw-sp(22);
+  font-weight: 700;
+  text-align: right;
+  span.red {
+    margin-right: .2em;
+    color: $color-red;
+    font-family: $font2;
+    font-weight: 800;
+
+    font-size: 1.86em;
+  }
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .result li:nth-child(n + 2) {
+    margin-top: vw-sp(20);
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .result {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: vw-pc(-8);
+  }
+
+  .result li {
+    margin-left: vw-pc(8);
+    width: calc(50% - #{vw-pc(8)});
+  }
+
+  .result li:nth-child(n + 3) {
+    margin-top: vw-pc(8);
+  }
+
+  .result li a {
+    padding: vw-pc(20);
+  }
+
+  .result-image {
+    width: vw-pc(70);
+    img {
+      height: vw-pc(70);
+    }
+  }
+
+  .result-content {
+    width: vw-pc(355);
+  }
+
+  .result-title {
+    font-size: vw-pc(18);
+  }
+
+  .result-desc {
+    font-size: vw-pc(13);
+  }
+
+  .result-price {
+    font-size: vw-pc(15);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .result {
+    margin-left: -8px;
+  }
+
+  .result li {
+    margin-left: 8px;
+    width: calc(50% - 8px);
+  }
+
+  .result li:nth-child(n + 3) {
+    margin-top: 8px;
+  }
+
+  .result li a {
+    padding: 20px;
+  }
+
+  .result-image {
+    width: 70px;
+    img {
+      height: 70px;
+    }
+  }
+
+  .result-content {
+    width: 355px;
+  }
+
+  .result-title {
+    font-size: 18px; font-size: 1.8rem;
+  }
+
+  .result-desc {
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .result-price {
+    font-size: 15px; font-size: 1.5rem;
+  }
+}

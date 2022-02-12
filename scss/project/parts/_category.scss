@@ -1,0 +1,100 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- category - */
+
+.category li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 vw-sp(50) .1em .8em;
+  height: vw-sp(60);
+  background-color: $color-base;
+  border: 1px solid $color-main;
+  border-radius: vw-sp(10);
+  font-size: vw-sp(26);
+  font-weight: 500;
+  transition: .3s;
+}
+
+.category li a:hover {
+  background-color: $color-main;
+  color: $color-base;
+}
+
+.category li a:after {
+  content: '';
+  position: absolute;
+  top:  50%;
+  right: vw-sp(20);
+  display: inline-block;
+  width: vw-sp(12);
+  height: vw-sp(18);
+  background-image: url(../img/common/arrow-og.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  transition: .3s;
+}
+
+.category li a:hover:after {
+  background-image: url(../img/common/arrow-wh.png);
+  transform: translateX(.3em) translateY(-50%);
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .category {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: vw-sp(-30);
+  }
+
+  .category li {
+    margin-left: vw-sp(30);
+    width: calc(50% - #{vw-sp(30)});
+  }
+
+  .category li:nth-child(n + 3) {
+    margin-top: vw-sp(20);
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .category li a {
+    padding: 0 vw-pc(40) .1em 1.5em;
+    height: vw-pc(30);
+    border-radius: vw-pc(5);
+    font-size: vw-pc(13);
+  }
+
+  .category li a:after {
+    right: vw-pc(20);
+    width: vw-pc(6);
+    height: vw-pc(9);
+  }
+
+  .category li:nth-child(n + 2) {
+    margin-top: vw-pc(10);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .category li a {
+    padding: 0 40px .1em 1.5em;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .category li a:after {
+    right: 20px;
+    width: 6px;
+    height: 9px;
+  }
+
+  .category li:nth-child(n + 2) {
+    margin-top: 10px;
+  }
+}

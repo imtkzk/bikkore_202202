@@ -1,0 +1,94 @@
+// main: ../style.scss;
+
+/* ------------------------------------------- pagenation - */
+
+.pagenation {
+  margin-top: vw-sp(60);
+}
+
+.pagenation-num {
+  margin-bottom: 1em;
+  color: #888;
+  font-size: vw-sp(26);
+  text-align: center;
+  line-height: 1.5em;
+  span {
+    color: $color-main;
+  }
+}
+
+.pagenation-list {
+  display: flex;
+  justify-content: center;
+}
+
+.pagenation-list li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: vw-sp(70);
+  height: vw-sp(70);
+  background-color: $color-base;
+  border: 1px solid $color-main;
+  border-radius: 5px;
+  color: $color-main;
+  font-family: $font2;
+  font-size: vw-sp(32);
+  font-weight: 700;
+  transition: .3s;
+}
+
+.pagenation-list li.is-active span,
+.pagenation-list li a:hover span {
+  background-color: $color-main;
+  color: $color-base;
+}
+
+.pagenation-list li:nth-child(n + 2) {
+  margin-left: vw-sp(20);
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .pagenation {
+    margin-top: vw-pc(65);
+  }
+
+  .pagenation-num {
+    font-size: vw-pc(13);
+  }
+
+  .pagenation-list li span {
+    width: vw-pc(35);
+    height: vw-pc(35);
+    border-radius: vw-pc(5);
+    font-size: vw-pc(16);
+  }
+
+  .pagenation-list li:nth-child(n + 2) {
+    margin-left: vw-pc(10);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .pagenation {
+    margin-top: 65px;
+  }
+
+  .pagenation-num {
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .pagenation-list li span {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .pagenation-list li:nth-child(n + 2) {
+    margin-left: 10px;
+  }
+
+}

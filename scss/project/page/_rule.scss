@@ -1,0 +1,93 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- rule - */
+
+.rule-box {
+  line-height: 1.8em;
+}
+
+dl {
+  margin-top: vw-sp(60);
+
+  dt {
+    font-size: vw-sp(30);
+    font-weight: 600;
+  }
+}
+
+.rule-signaturebox {
+  text-align: right;
+  margin-top: vw-sp(60);
+
+  p {
+    margin-top: vw-sp(20);
+  }
+}
+
+.rule-contactbox {
+  display: inline-block;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 0 vw-sp(20) vw-sp(30) vw-sp(20);
+  margin: vw-sp(80) 0 vw-sp(40) 0;
+
+  dl {
+    margin-top: vw-sp(30);
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  dl {
+    margin-top: vw-pc(30);
+
+    dt {
+      font-size: vw-pc(15);
+    }
+  }
+
+  .rule-signaturebox {
+    margin-top: vw-pc(40);
+
+    p {
+      margin-top: vw-pc(20);
+    }
+  }
+
+  .rule-contactbox {
+    padding: 0 vw-pc(40) vw-pc(15) vw-pc(40);
+    margin: vw-pc(40) 0 vw-pc(20) 0;
+
+    dl {
+      margin-top: vw-pc(15);
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  dl {
+    margin-top: 30px;
+
+    dt {
+      font-size: 15px;
+    }
+  }
+
+  .rule-signaturebox {
+    margin-top: 40px;
+
+    p {
+      margin-top: 20px;
+    }
+  }
+
+  .rule-contactbox {
+    padding: 0 40px 15px 40px;
+    margin: 40px 0 20px 0;
+
+    dl {
+      margin-top: 15px;
+    }
+  }
+}

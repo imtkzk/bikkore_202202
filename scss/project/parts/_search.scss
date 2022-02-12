@@ -1,0 +1,135 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- search - */
+
+.search {
+  position: relative;
+  width: vw-sp(630);
+  height: vw-sp(70);
+}
+
+.search:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: inline-block;
+  width: vw-sp(40);
+  height: vw-sp(40);
+  background-image: url(../img/common/search.png);
+  background-size: contain;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.search-input {
+  position: absolute;
+  left: vw-sp(60);
+  top: 0;
+  padding: 0 1em;
+  width: vw-sp(400);
+  height: vw-sp(70);
+  border-radius: vw-sp(10);
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: vw-sp(26);
+  line-height: 1em;
+}
+
+.search input::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+.search input:-ms-input-placeholder,
+.search input::-ms-input-placeholder {
+  color: #ccc;
+}
+
+.search input::-moz-placeholder {
+  color: #ccc;
+}
+
+.search-btn {
+  position:absolute;
+  top: 0;
+  left: vw-sp(480);
+  width: vw-sp(150);
+  height: vw-sp(70);
+  border-radius: vw-sp(10);
+  background-color: $color-main;
+  border: 1px solid $color-main;
+  color: $color-base;
+  font-size: vw-sp(30);
+  font-weight: 700;
+  transition: .3s;
+}
+
+.search-btn:hover{
+  background: $color-base;
+  color: $color-main;
+}
+
+
+@media screen and (min-width: $breakpoint1) {
+
+  .search {
+    width: vw-pc(310);
+    height: vw-pc(35);
+  }
+
+  .search:before {
+    left: vw-pc(10);
+    width: vw-pc(20);
+    height: vw-pc(20);
+  }
+
+  .search-input {
+    left: 0;
+    padding: 0 1em 0 vw-pc(40);
+    width: vw-pc(230);
+    height: vw-pc(35);
+    border-radius: vw-pc(5);
+    font-size: vw-pc(13);
+  }
+
+  .search-btn {
+    left: vw-pc(240);
+    width: vw-pc(75);
+    height: vw-pc(35);
+    border-radius: vw-pc(5);
+    font-size: vw-pc(15);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .search {
+    width: 310px;
+    height: 35px;
+  }
+
+  .search:before {
+    left: 10px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .search-input {
+    padding: 0 1em 0 40px;
+    width: 230px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+
+  .search-btn {
+    left: 240px;
+    width: 75px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 15px; font-size: 1.5rem;
+  }
+}
+
+
+/* ------------------------------------------- help search - */

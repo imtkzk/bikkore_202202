@@ -1,0 +1,756 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- introduction - */
+
+/* ------------------------------------------- intro - */
+
+.intro {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: vw-sp(745);
+  background-image: url(../img/introduction/bg_sp.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+}
+
+.intro > div {
+  position: relative;
+  width: vw-sp(690);
+}
+
+.intro-illust {
+  position: absolute;
+  left: vw-sp(-18);
+  bottom: vw-sp(181);
+  width: vw-sp(318);
+  z-index: -1;
+}
+
+.intro-label {
+  margin: 0 auto vw-sp(32) auto;
+  width: vw-sp(620);
+}
+
+.intro-catch {
+  margin: 0 auto vw-sp(45) auto;
+  width: vw-sp(650);
+}
+
+.intro-acquired {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: vw-sp(180);
+  background-color: $color-base;
+  box-shadow: 0px 10px 20px 0px rgba(4, 0, 0, 0.05);
+  border-radius: vw-sp(20);
+}
+.intro-acquiredPre{
+  width: vw-sp(680);
+  height: vw-sp(180);
+}
+.intro-acquired:after {
+  content: '';
+  position: absolute;
+  top: vw-sp(-42);
+  right: vw-sp(30);
+  width: vw-sp(124);
+  height: vw-sp(106);
+  background-image: url(../img/introduction/money.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.intro-acquired p {
+  font-size: vw-sp(40);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5em;
+  span.line {
+    background: linear-gradient(transparent 50%, #fcff00 50%);
+  }
+  span.color {
+    color: $color-main;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .intro {
+    height: vw-pc(460);
+    background-image: url(../img/introduction/bg.jpg);
+  }
+
+  .intro > div {
+    width: vw-pc(1200);
+  }
+
+  .intro-illust {
+    left: vw-pc(-88);
+    bottom: vw-pc(-49);
+    width: vw-pc(477);
+  }
+
+  .intro-label {
+    margin: 0 auto vw-pc(25) auto;
+    width: vw-pc(415);
+  }
+
+  .intro-catch {
+    margin: 0 auto vw-pc(30) auto;
+    width: vw-pc(790);
+  }
+
+  .intro-acquired {
+    width: vw-pc(640);
+    height: vw-pc(70);
+    border-radius: vw-pc(10);
+  }
+  .intro-acquiredPre{
+    width: vw-pc(440);
+  }
+  .intro-acquired:after {
+    top: vw-pc(-20);
+    right: vw-pc(-60);
+    width: vw-pc(85);
+    height: vw-pc(72);
+  }
+
+  .intro-acquired p {
+    font-size: vw-pc(24);
+    span.color {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .intro {
+    height: 460px;
+  }
+
+  .intro > div {
+    width: 1200px;
+  }
+
+  .intro-illust {
+    left: -88px;
+    bottom: -49px;
+    width: 477px;
+  }
+
+  .intro-label {
+    margin: 0 auto 25px auto;
+    width: 415px;
+  }
+
+  .intro-catch {
+    margin: 0 auto 30px auto;
+    width: 790px;
+  }
+
+  .intro-acquired {
+    width: 640px;
+    height: 70px;
+    border-radius: 10px;
+  }
+  .intro-acquiredPre{
+    width: 440px;
+  }
+  .intro-acquired:after {
+    top: -20px;
+    right: -60px;
+    width: 85px;
+    height: 72px;
+  }
+
+  .intro-acquired p {
+    font-size: 24px; font-size: 2.4rem;
+  }
+}
+
+
+/* ------------------------------------------- intro head - */
+
+.intro-head {
+  margin-bottom: 1em;
+  font-family: $font2;
+  font-size: vw-sp(48);
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.5em;
+  letter-spacing: .15em;
+}
+
+.intro-head--base {
+  color: $color-base;
+}
+
+.intro-head--og {
+  color: $color-main;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .intro-head {
+    font-size: vw-pc(36);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .intro-head {
+    font-size: 36px; font-size: 3.6rem;
+  }
+}
+
+
+/* ------------------------------------------- intro status - */
+
+.sec--intro-status {
+  margin-top: 0 !important;
+  padding: vw-sp(45) 0 vw-sp(120) 0;
+}
+
+.intro-statuses > li {
+  padding: vw-sp(35) vw-sp(30) vw-sp(25) vw-sp(30);
+  width: 100%;
+  background-color: $color-thin;
+  border: vw-sp(4) solid $color-main;
+}
+
+.intro-status-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: vw-sp(120);
+  border-bottom: 1px solid $color-main;
+  font-size: vw-sp(36);
+  font-weight: 700;
+  span {
+    position: relative;
+    display: inline-block;
+  }
+
+  span:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+  }
+}
+
+.intro-statuses > li:nth-child(1) .intro-status-head span {
+  padding-left: vw-sp(90);
+}
+
+.intro-statuses > li:nth-child(1) .intro-status-head span:before {
+  width: vw-sp(68);
+  height: vw-sp(42);
+  background-image: url(../img/introduction/person.png);
+}
+
+.intro-statuses > li:nth-child(2) .intro-status-head span {
+  padding-left: vw-sp(60);
+}
+
+.intro-statuses > li:nth-child(2) .intro-status-head span:before {
+  width: vw-sp(44);
+  height: vw-sp(49);
+  background-image: url(../img/introduction/coin.png);
+}
+
+.intro-status > li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: vw-sp(170);
+}
+
+.intro-status > li:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+  height: vw-sp(6);
+  background-image: url(../img/common/line.png);
+  background-size: auto vw-sp(6);
+  background-repeat: repeat-x;
+}
+
+.intro-status > li:last-child:after {
+  content: none;
+}
+
+.intro-status > li p {
+  font-size: vw-sp(30);
+  font-weight: 700;
+}
+
+.intro-status-num {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: $color-main;
+  font-family: $font2;
+  font-size: vw-sp(64) !important;
+  font-weight: 900;
+  transform: translate(-50%, -50%);
+  span {
+    background: linear-gradient(transparent 50%, #fcff00 50%);
+  }
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .intro-statuses > li:nth-child(n + 2) {
+    margin-top: vw-sp(35);
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .sec--intro-status {
+    padding: vw-pc(35) 0 vw-pc(90) 0;
+  }
+
+  .intro-statuses {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .intro-statuses > li {
+    padding: vw-pc(20) vw-pc(40) vw-pc(10) vw-pc(40);
+    width: vw-pc(590);
+    border: vw-pc(2) solid $color-main;
+  }
+
+  .intro-status-head {
+    height: vw-pc(60);
+    font-size: vw-pc(18);
+  }
+
+  .intro-statuses > li:nth-child(1) .intro-status-head span {
+    padding-left: vw-pc(45);
+  }
+
+  .intro-statuses > li:nth-child(1) .intro-status-head span:before {
+    width: vw-pc(34);
+    height: vw-pc(21);
+  }
+
+  .intro-statuses > li:nth-child(2) .intro-status-head span {
+    padding-left: vw-pc(30);
+  }
+
+  .intro-statuses > li:nth-child(2) .intro-status-head span:before {
+    width: vw-pc(22);
+    height: vw-pc(25);
+  }
+
+  .intro-status > li {
+    height: vw-pc(85);
+  }
+
+  .intro-status > li:after {
+    height: vw-pc(3);
+    background-size: auto vw-pc(3);
+  }
+
+  .intro-status > li p {
+    font-size: vw-pc(15);
+  }
+
+  .intro-status-num {
+    font-size: vw-pc(32) !important;
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .sec--intro-status {
+    padding: 35px 0 90px 0;
+  }
+
+  .intro-statuses {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .intro-statuses > li {
+    padding: 20px 40px 10px 40px;
+    width: 590px;
+    border: 2px solid $color-main;
+  }
+
+  .intro-status-head {
+    height: 60px;
+    font-size: 18px; font-size: 1.8rem;
+  }
+
+  .intro-statuses > li:nth-child(1) .intro-status-head span {
+    padding-left: 45px;
+  }
+
+  .intro-statuses > li:nth-child(1) .intro-status-head span:before {
+    width: 34px;
+    height: 21px;
+  }
+
+  .intro-statuses > li:nth-child(2) .intro-status-head span {
+    padding-left: 30px;
+  }
+
+  .intro-statuses > li:nth-child(2) .intro-status-head span:before {
+    width: 22px;
+    height: 25px;
+  }
+
+  .intro-status > li {
+    height: 85px;
+  }
+
+  .intro-status > li:after {
+    height: 3px;
+    background-size: auto 3px;
+  }
+
+  .intro-status > li p {
+    font-size: 15px; font-size: 1.5rem;
+  }
+
+  .intro-status-num {
+    font-size: 32px; font-size: 3.2rem !important;
+  }
+}
+
+/* ------------------------------------------- intro copy - */
+
+.sec--intro-copy {
+  margin-top: 0 !important;
+  padding: vw-sp(80) 0 vw-sp(85) 0;
+}
+
+.sec--intro-copy:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  height: 100%;
+  background-image: url(../img/introduction/stripe_sp.jpg);
+  background-repeat: repeat;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.intro-copy-input {
+  width: 100%;
+}
+
+.intro-copy-input input[type="text"] {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5em;
+  width: 100%;
+  height: vw-sp(120);
+  background-color: $color-base;
+  border: 0;
+  border-radius: vw-sp(10);
+  font-family: $font1;
+  font-size: vw-sp(32);
+  font-weight: 700;
+  letter-spacing: .05em;
+}
+
+.intro-copy-btn {
+  width: vw-sp(410);
+  .apply-btn {
+    font-size: vw-sp(30) !important;
+    letter-spacing: .05em;
+  }
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .intro-copy-input {
+    margin-bottom: vw-sp(30);
+  }
+
+  .intro-copy-btn {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .sec--intro-copy {
+    padding: vw-pc(55) 0 vw-pc(60) 0;
+  }
+
+  .sec--intro-copy:before {
+    background-image: url(../img/introduction/stripe.jpg);
+  }
+
+  .intro-copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: vw-pc(605);
+  }
+
+  .intro-copy-input {
+    width: vw-pc(500);
+  }
+
+  .intro-copy-input input[type="text"] {
+    height: vw-pc(65);
+    border-radius: vw-pc(5);
+    font-size: vw-pc(16);
+  }
+
+  .intro-copy-btn {
+    position: relative;
+    top: vw-pc(-3);
+    width: vw-pc(85);
+    .apply-btn {
+      font-size: vw-pc(15) !important;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .sec--intro-copy {
+    padding: 55px 0 60px 0;
+  }
+
+  .intro-copy {
+    width: 605px;
+  }
+
+  .intro-copy-input {
+    width: 500px;
+  }
+
+  .intro-copy-input input[type="text"] {
+    height: 65px;
+    border-radius: 5px;
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .intro-copy-btn {
+    top: -3px;
+    width: 85px;
+    .apply-btn {
+      font-size: 15px; font-size: 1.5rem !important;
+    }
+  }
+}
+
+
+/* ------------------------------------------- intro use - */
+
+.sec--intro-use {
+  margin-top: 0 !important;
+  padding: vw-sp(115) 0 0 0;
+}
+
+.intro-use {
+  margin-bottom: vw-sp(70);
+}
+
+.intro-use li {
+  padding: vw-sp(55) 0;
+  background-color: $color-base;
+}
+
+.intro-use li:nth-child(n + 2){
+  margin-top: vw-sp(40);
+}
+
+.intro-use-num {
+  margin-bottom: vw-sp(30);
+  color: $color-main;
+  font-family: $font2;
+  font-size: vw-sp(72);
+  font-weight: 900;
+  text-align: center;
+}
+
+.intro-use-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: vw-sp(280);
+  margin: 0 auto vw-sp(30) auto;
+}
+
+.intro-use li:nth-child(1) .intro-use-image {
+  width: vw-sp(322);
+}
+
+.intro-use li:nth-child(2) .intro-use-image {
+  width: vw-sp(322);
+}
+
+.intro-use li:nth-child(3) .intro-use-image {
+  width: vw-sp(258);
+}
+
+.intro-use-head {
+  margin-bottom: vw-sp(35);
+  font-family: $font2;
+  font-size: vw-sp(36);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.8em;
+  span.line {
+    background: linear-gradient(transparent 50%, #fcff00 50%);
+  }
+  span.color {
+    color: $color-main;
+    font-size: 1.33em;
+  }
+}
+
+.intro-use-desc {
+  padding: 0 1.5em;
+}
+
+.intro-use-desc p {
+  font-size: vw-sp(26);
+  line-height: 1.8em;
+}
+
+.intro-caution {
+  margin: 0 auto;
+  width: 100%;
+}
+.intro-cautionPre{
+  margin-top: 3em;
+}
+@media screen and (min-width: $breakpoint1) {
+
+  .sec--intro-use {
+    padding: vw-pc(85) 0 vw-pc(40) 0;
+  }
+
+  .intro-use {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: vw-pc(55);
+  }
+
+  .intro-use li {
+    padding: vw-pc(30) 0;
+    width: vw-pc(386);
+  }
+
+  .intro-use li:nth-child(n + 2){
+    margin-top: 0;
+  }
+
+  .intro-use-num {
+    margin-bottom: vw-pc(15);
+    font-size: vw-pc(36);
+  }
+
+  .intro-use-image {
+    margin-bottom: vw-pc(15);
+    height: vw-pc(150);
+  }
+
+  .intro-use li:nth-child(1) .intro-use-image {
+    width: vw-pc(161);
+  }
+
+  .intro-use li:nth-child(2) .intro-use-image {
+    width: vw-pc(162);
+  }
+
+  .intro-use li:nth-child(3) .intro-use-image {
+    width: vw-pc(129);
+  }
+
+  .intro-use-head {
+    margin-bottom: vw-pc(20);
+    font-size: vw-pc(18);
+  }
+
+  .intro-use-desc p {
+    font-size: vw-pc(13);
+  }
+
+  .intro-caution {
+    width: vw-pc(1000);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .sec--intro-use {
+    padding: 85px 0 40px 0;
+  }
+
+  .intro-use {
+    margin-bottom: 55px;
+  }
+
+  .intro-use li {
+    padding: 30px 0;
+    width: 386px;
+  }
+
+  .intro-use-num {
+    margin-bottom: 15px;
+    font-size: 36px; font-size: 3.6rem;
+  }
+
+  .intro-use-image {
+    margin-bottom: 15px;
+    height: 150px;
+  }
+
+  .intro-use li:nth-child(1) .intro-use-image {
+    width: 161px;
+  }
+
+  .intro-use li:nth-child(2) .intro-use-image {
+    width: 162px;
+  }
+
+  .intro-use li:nth-child(3) .intro-use-image {
+    width: 129px;
+  }
+
+  .intro-use-head {
+    margin-bottom: 20px;
+    font-size: 18px; font-size: 1.8rem;
+  }
+
+  .intro-use-desc p {
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .intro-caution {
+    width: 1000px;
+  }
+}

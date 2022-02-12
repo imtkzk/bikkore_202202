@@ -1,0 +1,447 @@
+// main: ../style.scss;
+.mvChart {
+  background-color: #f3faf7;
+  padding: vw-sp(30) 0;
+
+  .l-mvChart {
+    width: vw-sp(690);
+    margin: 0 auto;
+
+    .l-chartcont {
+
+      .data-box {
+        text-align: right;
+        padding: vw-sp(10) 0;
+
+        .updatetime {
+          margin-top: vw-sp(10);
+          color: #888;
+          font-family: $font2;
+          font-weight: 300;
+          font-size: vw-sp(30);
+
+          span.beforeratioprice-minus {
+            color: $color-red;
+            font-family: $font2;
+            font-size: vw-sp(36);
+            margin-left: vw-sp(20);
+          }
+        }
+
+        .updateprice {
+          position: relative;
+          margin-top: vw-sp(10);
+          color: $color-green;
+          font-family: $font2;
+          font-size: vw-sp(60);
+          letter-spacing: .05em;
+          img{
+            width: vw-sp(56);
+            margin-right: vw-sp(6);
+          }
+          span{
+            font-size: vw-sp(22);
+            color: #888;
+            margin-left: vw-sp(10);
+            b{
+            color: #000;
+            font-size: vw-sp(30);
+            }
+          }
+        }
+        .beforeratio {
+          margin-top: vw-sp(10);
+          font-weight: 700;
+        }
+      }
+
+      .chartcont-title {
+        position: relative;
+        h3 {
+          font-weight: 700;
+          font-size: vw-sp(24);
+
+          span {
+            color: #888;
+            margin-left: vw-sp(20);
+            font-size: vw-sp(18);
+          }
+        }
+      }
+
+      .chartcont-title::before{
+        content: "";
+        background: url(../img/common/btc.png) no-repeat center center;
+        background-size: contain;
+        position: absolute;
+        width: vw-sp(50);
+        height: vw-sp(50);
+        top: vw-sp(4);
+        left: vw-sp(10);
+      }
+
+      .chartcont-chart {
+        width: 100%;
+        margin-top: vw-sp(20);
+      }
+    }
+
+    .l-datacont {
+
+      .l-data-box {
+        margin: 0 auto;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: vw-sp(10);
+        .data-box {
+          text-align: right;
+          padding: vw-sp(50) 0;
+  
+          .updatetime {
+            margin-top: 0;
+            color: #888;
+            font-family: $font2;
+            font-weight: 300;
+            font-size: vw-sp(30);
+          }
+  
+          .updateprice {
+            margin-top: vw-sp(10);
+            color: $color-green;
+            font-family: $font2;
+            font-size: vw-sp(36);
+            letter-spacing: .1em;
+          }
+  
+          .beforeratio {
+            margin-top: vw-sp(10);
+            font-weight: 700;
+  
+            span.beforeratioprice-plus {
+              color: $color-green;
+              font-family: $font2;
+              font-size: vw-sp(24);
+              margin-left: vw-sp(10);
+            }
+          }
+        }
+      }
+
+      .hero-btns {
+        margin: 0 auto;
+        margin-top: vw-sp(50);
+      }
+
+      .hero-btn-label {
+        color: #000;
+
+        span {
+          color: $color-main;
+          font-family: $font2;
+          font-size: vw-sp(48);
+        }
+      }
+
+      .hero-btn-label:before,
+      .hero-btn-label:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: vw-sp(2);
+        height: 80%;
+        background-color: $color-main;
+      }
+    }
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  .tab_area {
+    margin-top: vw-sp(10);
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .tab_area label {
+    padding: vw-sp(12) vw-sp(30);
+    color: $color-green;
+    text-align: center;
+    font-size: vw-sp(30);
+    font-weight: 700;
+    cursor: pointer;
+    transition: ease 0.2s opacity;
+    border-radius: vw-sp(5);
+  }
+
+  .tab_area label:hover {
+    opacity: 0.7;
+  }
+
+  .tab_panel {
+    width: 100%;
+    display: none;
+  }
+
+  #tab1:checked~.tab_area .tab1_label,
+  #tab2:checked~.tab_area .tab2_label,
+  #tab3:checked~.tab_area .tab3_label,
+  #tab4:checked~.tab_area .tab4_label {
+    background: $color-green;
+    color: #fff;
+  }
+
+  #tab1:checked~.panel_area #panel1,
+  #tab2:checked~.panel_area #panel2,
+  #tab3:checked~.panel_area #panel3,
+  #tab4:checked~.panel_area #panel4 {
+    display: block;
+  }
+  .highlight{
+    position: relative;
+    text-align: center;
+    margin: vw-sp(50) 0;
+    font-weight: 700;
+    font-size: vw-sp(42);
+    background-color: $color-green;
+    padding: vw-sp(30) 0;
+    border-radius: vw-sp(10);
+    color: #fff;
+    span{
+      font-size: 1.2em;
+      margin: 0 vw-sp(10);
+      color: yellow;
+  }
+}
+  .highlight:before {
+    content: "";
+    position: absolute;
+    top: vw-sp(-30);
+    left: 50%;
+    margin-left: vw-sp(-15);
+    border: vw-sp(15) solid transparent;
+    border-bottom: vw-sp(15) solid $color-green;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+  .mvChart {
+    padding: vw-pc(50) 0;
+
+    .l-mvChart {
+      width: vw-pc(1200);
+      display: flex;
+      justify-content: space-between;
+
+      .l-chartcont {
+        width: 50%;
+
+        .chartcont-title {
+          padding-left: vw-pc(40);
+          h3 {
+            font-size: vw-pc(24);
+
+            span {
+              margin-left: vw-pc(20);
+              font-size: vw-pc(18);
+            }
+          }
+        }
+
+      .chartcont-title::before{
+        width: vw-pc(25);
+        height: vw-pc(25);
+        top: vw-pc(1);
+        left: vw-pc(10);
+      }
+
+        .chartcont-chart {
+          margin-top: vw-pc(20);
+        }
+      }
+
+      .l-datacont {
+        width: 48%;
+
+        .l-data-box {
+          border-radius: vw-pc(10);
+
+          .data-box {
+            padding: vw-pc(30) 0;
+
+            .updatetime {
+              font-size: vw-pc(18);
+            }
+
+            .updateprice {
+              margin-top: vw-pc(10);
+              font-size: vw-pc(48);
+              letter-spacing: .1em;
+            }
+
+            .beforeratio {
+              margin-top: vw-pc(10);
+
+              span.beforeratioprice-plus {
+                font-size: vw-pc(24);
+                margin-left: vw-pc(10);
+              }
+            }
+          }
+        }
+
+        .hero-btns {
+          margin-top: vw-pc(30);
+        }
+
+        .hero-btn-label {
+          span {
+            font-size: vw-pc(28);
+          }
+        }
+
+        .hero-btn-label:before,
+        .hero-btn-label:after {
+          width: vw-pc(2);
+        }
+      }
+    }
+
+    .tab_area {
+      margin-top: vw-pc(10);
+      justify-content: center;
+    }
+
+    .tab_area label {
+      padding: vw-pc(12) vw-pc(30);
+      font-size: vw-pc(15);
+      border-radius: vw-pc(5);
+    }
+    .highlight{
+      margin: vw-pc(30) 0;
+      font-size: vw-pc(28);
+      padding: vw-pc(20) 0;
+      border-radius: vw-pc(10);
+      span{
+        margin: 0 vw-pc(10);
+    }
+  }
+    .highlight:before {
+      top: vw-pc(-30);
+      margin-left: vw-pc(-15);
+      border: vw-pc(15) solid transparent;
+      border-bottom: vw-pc(15) solid $color-green;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+  .mvChart {
+    padding: 50px 0;
+
+    .l-mvChart {
+      width: 1200px;
+
+      .l-chartcont {
+        width: 50%;
+
+        .chartcont-title {
+          h3 {
+            font-size: 24px;
+
+            span {
+              margin-left: 20px;
+              font-size: 18px;
+            }
+          }
+        }
+
+      .chartcont-title::before{
+        width: 25px;
+        height: 25px;
+        top: 1px;
+        left: 10px;
+      }
+
+        .chartcont-chart {
+          margin-top: 20px;
+        }
+      }
+
+      .l-datacont {
+        width: 48%;
+
+        .l-data-box {
+          border-radius: 10px;
+
+          .data-box {
+            padding: 30px 0;
+
+            .updatetime {
+              font-size: 18px;
+            }
+
+            .updateprice {
+              margin-top: 10px;
+              font-size: 48px;
+              letter-spacing: .1em;
+            }
+
+            .beforeratio {
+              margin-top: 10px;
+
+              span.beforeratioprice-plus {
+                font-size: 24px;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+
+        .hero-btns {
+          margin-top: 20px;
+        }
+
+        .hero-btn-label {
+          span {
+            font-size: 28px;
+          }
+        }
+
+        .hero-btn-label:before,
+        .hero-btn-label:after {
+          width: 2px;
+        }
+      }
+    }
+
+    .tab_area {
+      margin-top: 10px;
+    }
+
+    .tab_area label {
+      padding: 12px 30px;
+      font-size: 15px;
+      border-radius: 5px;
+    }
+
+    .highlight{
+      margin: 20px 0;
+      font-size: 28px;
+      padding: 20px 0;
+      border-radius: 10px;
+      span{
+        margin: 0 10px;
+      }
+    }
+      .highlight:before {
+        top: -30px;
+        margin-left: -15px;
+        border: 15px solid transparent;
+        border-bottom: 15px solid $color-green;
+      }
+    }
+}

@@ -1,0 +1,305 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- news-detail - */
+
+.news-heads {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.news-date {
+  color: #888;
+  font-family: $font2;
+  font-size: vw-sp(26);
+  font-weight: 500;
+}
+
+.news-cat {
+  margin-left: 1em;
+  padding: .3em 1em .4em 1em;
+  background-color: #ffebcf;
+  border-radius: 1em;
+  color: $color-main;
+  font-size: vw-sp(26);
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .news-date {
+    font-size: vw-pc(13);
+  }
+
+  .news-cat {
+    font-size: vw-pc(13);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .news-date {
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .news-cat {
+    font-size: 13px; font-size: 1.3rem;
+  }
+}
+
+
+/* ------------------------------------------- news archive- */
+
+.news-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: vw-sp(40);
+}
+
+.news-tabs li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: vw-sp(345);
+  height: vw-sp(100);
+  border-radius: vw-sp(10);
+  color: $color-main;
+  font-size: vw-sp(30);
+  font-weight: 700;
+  cursor: pointer;
+  span {
+    position: relative;
+  }
+  span:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.5em;
+    width: 100%;
+    height: 1px;
+    background-color: $color-main;
+  }
+}
+
+.news-tabs li.is-active {
+  background-color: $color-main;
+  color: $color-base;
+}
+
+.news-tabs li.is-active:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: vw-sp(20) vw-sp(23) 0 vw-sp(23);
+  border-color: $color-main transparent transparent transparent;
+  transform: translateX(-50%);
+}
+
+.news-tabcontent {
+  display: none;
+}
+
+.news-tabcontent.is-active {
+  display: block;
+}
+
+.news > li a {
+  display: block;
+  padding: vw-sp(50) vw-sp(30);
+  background-color: $color-base;
+  transition: .3s;
+}
+
+.news li:nth-child(n + 2) {
+  margin-top: vw-sp(20);
+}
+
+.news-title {
+  font-size: vw-sp(30);
+  line-height: 1.5em;
+}
+
+.news-btn {
+  margin: vw-sp(60) auto 0 auto;
+  width: vw-sp(550);
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .news-tabs {
+    margin-bottom: vw-pc(25);
+  }
+
+  .news-tabs li {
+    width: vw-pc(485);
+    height: vw-pc(50);
+    border-radius: vw-pc(5);
+    font-size: vw-pc(15);
+  }
+
+  .news-tabs li.is-active:after {
+    border-width: vw-pc(15) vw-pc(13) 0 vw-pc(13);
+  }
+
+  .news > li a {
+    padding: vw-pc(25) vw-pc(40);
+  }
+
+  .news li:nth-child(n + 2) {
+    margin-top: vw-pc(10);
+  }
+
+  .news-title {
+    font-size: vw-pc(15);
+  }
+
+  .news-btn {
+    margin: vw-pc(40) auto 0 auto;
+    width: vw-pc(300);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .news-tabs {
+    margin-bottom: 25px;
+  }
+
+  .news-tabs li {
+    width: 485px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 15px; font-size: 1.5rem;
+  }
+
+  .news-tabs li.is-active:after {
+    border-width: 15px 13px 0 13px;
+  }
+
+  .news > li a {
+    padding: 25px 40px;
+  }
+
+  .news li:nth-child(n + 2) {
+    margin-top: 10px;
+  }
+
+  .news-title {
+    font-size: 15px; font-size: 1.5rem;
+  }
+
+  .news-btn {
+    margin: 40px auto 0 auto;
+    width: 300px;
+  }
+}
+
+
+/* ------------------------------------------- news detail- */
+
+.news-detail {
+  padding: vw-sp(120) vw-sp(30);
+  background-color: $color-base;
+}
+
+.news-detail-title {
+  margin-bottom: vw-sp(100);
+  padding-bottom: .5em;
+  border-bottom: 1px solid $color-main;
+  font-size: vw-sp(36);
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+.news-detail-content {
+  margin-bottom: vw-sp(70);
+}
+
+.news-detail-content p {
+  font-size: vw-sp(30);
+  line-height: 1.875em;
+}
+
+.news-detail-content p:nth-child(n + 2) {
+  margin-top: 1.5em;
+}
+
+.news-detail-btn {
+  margin: 0 auto;
+  width: vw-sp(510);
+}
+
+.news-detail-more-btn {
+  margin: vw-sp(60) auto 0 auto;
+  width: vw-sp(550);
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .news-detail {
+    margin-left: vw-sp(-30);
+    width: vw-sp(750);
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .news-detail {
+    padding: vw-pc(40);
+  }
+
+  .news-detail-title {
+    margin-bottom: vw-pc(45);
+    font-size: vw-pc(18);
+  }
+
+  .news-detail-content {
+    margin-bottom: vw-pc(45);
+  }
+
+  .news-detail-content p {
+    font-size: vw-pc(15);
+  }
+
+  .news-detail-btn {
+    width: vw-pc(320);
+  }
+
+  .news-detail-more-btn {
+    margin: vw-pc(30) auto 0 auto;
+    width: vw-pc(300);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .news-detail {
+    padding: 40px;
+  }
+
+  .news-detail-title {
+    margin-bottom: 45px;
+    font-size: 18px; font-size: 1.8rem;
+  }
+
+  .news-detail-content {
+    margin-bottom: 45px;
+  }
+
+  .news-detail-content p {
+    font-size: 15px; font-size: 1.5rem;
+  }
+
+  .news-detail-btn {
+    width: 320px;
+  }
+
+  .news-detail-more-btn {
+    margin: 30px auto 0 auto;
+    width: 300px;
+  }
+}

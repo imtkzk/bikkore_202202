@@ -1,0 +1,377 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- withdrawal - */
+
+.withdrawal-box {
+  margin-top: vw-sp(45);
+  padding: vw-sp(115) vw-sp(30);
+  background-color: $color-base;
+}
+
+.withdrawal-box-head {
+  margin-bottom: vw-sp(75);
+  font-size: vw-sp(32);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.withdrawal {
+  padding: 0 vw-sp(30) vw-sp(85) vw-sp(30);
+  background-color: #f8f8f8;
+  border: 1px solid #f8f8f8;
+}
+
+.withdrawal-form-newline {
+  margin-bottom: vw-sp(50);
+}
+
+.withdrawal-form-newline dt {
+  position: relative;
+  margin-bottom: vw-sp(60);
+  padding-top: vw-sp(30);
+  display: inline-block;
+  font-size: vw-sp(32);
+  font-weight: 700;
+}
+
+.withdrawal-form-newline dt:after {
+  content: '：';
+}
+
+.withdrawal-form-newline dd.endline {
+  position: relative;
+  padding: 0 0 vw-sp(60) 0;
+  width: 100%;
+  font-size: vw-sp(32);
+}
+
+.withdrawal-form-newline dd.endline:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+  height: vw-sp(6);
+  background-image: url(../img/common/line.png);
+  background-size: auto vw-sp(6);
+  background-repeat: repeat-x;
+}
+
+.withdrawal-form-newline .form-checks li {
+  margin-bottom: vw-sp(50);
+}
+.withdrawal-form {
+  margin-top: 0;
+  margin-bottom: vw-sp(50);
+}
+
+.withdrawal-form dt {
+  position: relative;
+  margin-bottom: .8em;
+  padding-top: vw-sp(60);
+  display: inline-block;
+  font-size: vw-sp(32);
+  font-weight: 700;
+}
+
+.withdrawal-form dt:after {
+  content: '：';
+}
+
+.withdrawal-form dd {
+  position: relative;
+  padding: 0 0 vw-sp(60) 0;
+  width: 100%;
+  font-size: vw-sp(32);
+}
+
+.withdrawal-form dd:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+  height: vw-sp(6);
+  background-image: url(../img/common/line.png);
+  background-size: auto vw-sp(6);
+  background-repeat: repeat-x;
+}
+.withdrawal-form p {
+  margin-top: vw-sp(30);
+}
+.withdrawal-form p a{
+  text-decoration: underline;
+}
+
+.withdrawal-cautions .withdrawal-caution:nth-child(n + 2) {
+  margin-top: vw-sp(60);
+}
+
+.withdrawal-caution {
+  margin-top: vw-sp(90);
+  padding: vw-sp(50) vw-sp(40);
+  height: vw-sp(630);
+  background-color: $color-base;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.withdrawal-caution-head {
+  margin-bottom: 1.5em;
+  font-size: vw-sp(32);
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+.withdrawal-caution-desc p {
+  font-size: vw-sp(26);
+  line-height: 2em;
+}
+
+.withdrawal-caution-desc p:nth-child(n + 2) {
+  margin-top: 1.5em;
+}
+
+.withdrawal-submit-btn {
+  margin: 0 auto;
+  width: vw-sp(510);
+}
+.form-drawal{
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .withdrawal-box {
+    margin-left: vw-sp(-30);
+    width: vw-sp(750);
+  }
+
+  .withdrawal-form dd:nth-child(2) input {
+    width: vw-sp(460) !important;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .withdrawal-box {
+    margin-top: vw-pc(45);
+    padding: vw-pc(60);
+  }
+
+  .withdrawal-box-head {
+    margin-bottom: vw-pc(50);
+    font-size: vw-pc(16);
+  }
+
+  .withdrawal {
+    padding: 0 vw-pc(40) vw-pc(60) vw-pc(40);
+  }
+
+  .withdrawal-form-newline {
+    margin-bottom: vw-pc(30);
+  }
+
+  .withdrawal-form-newline dt {
+    padding-top: 0;
+    margin-bottom: vw-pc(30);
+    font-size: vw-pc(16); 
+  }
+
+  .withdrawal-form-newline dt:before {
+    height: vw-pc(3);
+    background-size: auto vw-pc(3);
+  }
+
+  .withdrawal-form-newline dd.endline {
+    padding-bottom: vw-pc(30);
+    font-size: vw-pc(16);
+  }
+
+  .withdrawal-form-newline .form-checks li {
+    margin-bottom: vw-pc(30);
+  }
+  
+  .withdrawal-form-newline dd.endline:before {
+    height: vw-pc(3);
+    background-size: auto vw-pc(3);
+  }
+  .withdrawal-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: vw-pc(30);
+    margin-bottom: vw-pc(30);
+  }
+
+  .withdrawal-form dt {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0 vw-pc(15) vw-pc(30) vw-pc(15);
+    width: vw-pc(190);
+    font-size: vw-pc(16);
+  }
+
+  .withdrawal-form dt:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    height: vw-pc(3);
+    background-image: url(../img/common/line.png);
+    background-size: auto vw-pc(3);
+    background-repeat: repeat-x;
+  }
+
+  .withdrawal-form dd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 vw-pc(15) vw-pc(30) vw-pc(15);
+    width: calc(100% - #{vw-pc(190)});
+    font-size: vw-pc(16);
+  }
+
+  .withdrawal-form dd:before {
+    height: vw-pc(3);
+    background-size: auto vw-pc(3);
+  }
+  .withdrawal-cautions .withdrawal-caution:nth-child(n + 2) {
+    margin-top: vw-pc(30);
+  }
+
+  .withdrawal-caution {
+    margin-top: vw-pc(45);
+    padding: vw-pc(30) vw-pc(20);
+    height: vw-pc(215);
+  }
+
+  .withdrawal-caution-head {
+    font-size: vw-pc(16);
+  }
+
+  .withdrawal-caution-desc p {
+    font-size: vw-pc(13);
+  }
+
+  .withdrawal-submit-btn {
+    width: vw-pc(400);
+  }
+  .form-drawal{
+    width: vw-pc(90);
+  }
+  .withdrawal-form p {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .withdrawal-box {
+    padding: 60px;
+  }
+
+  .withdrawal-box-head {
+    margin-bottom: 50px;
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .withdrawal {
+    padding: 0 40px 60px 40px;
+  }
+
+  .withdrawal-form-newline {
+    margin-bottom: 30px;
+  }
+
+  .withdrawal-form-newline dt {
+    padding-top: 0;
+    margin-bottom: 30px;
+    font-size: 16px; 
+    font-size: 1.6rem;
+  }
+
+  .withdrawal-form-newline dt:before {
+    height: 3px;
+    background-size: auto 3px;
+  }
+
+  .withdrawal-form-newline dd.endline {
+    padding-bottom: 30px;
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .withdrawal-form-newline .form-checks li {
+    margin-bottom: 30px;
+  }
+  
+  .withdrawal-form-newline dd.endline:before {
+    height: 3px;
+    background-size: auto 3px;
+  }
+  .withdrawal-form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .withdrawal-form dt {
+    padding: 0 15px 30px 15px;
+    width: 190px;
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .withdrawal-form dt:before {
+    height: 3px;
+    background-size: auto 3px;
+  }
+
+  .withdrawal-form dd {
+    padding: 0 15px 30px 15px;
+    width: calc(100% - 190px);
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .withdrawal-form .form-checks li {
+    margin-bottom: 30px;
+  }
+  
+  .withdrawal-form dd:before {
+    height: 3px;
+    background-size: auto 3px;
+  }
+  .withdrawal-form p a:hover{
+    opacity: 0.7;
+  }
+
+  .withdrawal-cautions .withdrawal-caution:nth-child(n + 2) {
+    margin-top: 30px;
+  }
+
+  .withdrawal-caution {
+    margin-top: 45px;
+    padding: 30px 20px;
+    height: 215px;
+  }
+
+  .withdrawal-caution-head {
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .withdrawal-caution-desc p {
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .withdrawal-submit-btn {
+    width: 400px;
+  }
+  .form-drawal{
+    width: 90px;
+  }
+}

@@ -1,0 +1,217 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- login - */
+
+.logins {
+  padding: vw-sp(60) vw-sp(30);
+  background-color: $color-base;
+}
+
+.login {
+  margin-bottom: vw-sp(35);
+  padding: vw-sp(55) vw-sp(30);
+  width: 100%;
+  background-color: #f8f8f8;
+  border: 1px solid $color-main;
+}
+
+.login-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: vw-sp(60);
+  width: 100%;
+}
+
+.login-form dt {
+  margin-bottom: 1em;
+  width: 100%;
+  font-size: vw-sp(32);
+  font-weight: 700;
+}
+
+.login-form dd {
+  width: 100%;
+}
+
+.login-form dt:nth-of-type(n + 2){
+  margin-top: 1.5em;
+}
+
+.login-submit-btn {
+  margin: 0 auto vw-sp(55) auto;
+  width: vw-sp(510);
+}
+
+.login-links li a {
+  display: block;
+  padding: .5em 0;
+  color: $color-main;
+  font-size: vw-sp(26);
+  text-align: center;
+  transition: .3s;
+}
+
+.login-links li:nth-child(n + 2) a {
+  margin-top: 1em;
+}
+
+.login-entry {
+  padding: vw-sp(100) vw-sp(30);
+  width: 100%;
+  background-color: #f0fff8;
+  border: vw-sp(16) solid #dbefe6;
+}
+
+.login-entry-title {
+  margin-bottom: vw-sp(40);
+  font-size: vw-sp(32);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.8em;
+}
+
+.login-entry-submit-btn {
+  margin: 0 auto;
+  width: vw-sp(510);
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .logins {
+    margin-left: vw-sp(-30);
+    width: vw-sp(750);
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .logins {
+    display: flex;
+    justify-content: space-between;
+    padding: vw-pc(40);
+  }
+
+  .login {
+    margin-bottom: 0;
+    padding: vw-pc(40) vw-pc(30);
+    width: vw-pc(560);
+  }
+
+  .login-form {
+    margin-bottom: vw-pc(30);
+  }
+
+  .login-form dt {
+    font-size: vw-pc(16);
+  }
+
+  .login-submit-btn {
+    margin-bottom: vw-pc(35);
+    width: vw-pc(320);
+  }
+
+  .login-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .login-links li {
+    position: relative;
+  }
+
+  .login-links li a {
+    position: relative;
+    padding: .3em 0;
+    font-size: vw-pc(13);
+  }
+
+  .login-links li:nth-child(n + 2):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #ccc;
+  }
+
+  .login-links li a:hover:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.2em;
+    width: 100%;
+    height: 1px;
+    background-color: $color-main;
+    transition: .3s;
+  }
+
+  .login-links li:nth-child(n + 2) a {
+    margin: 0 0 0 2em;
+  }
+
+  .login-entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: vw-pc(55) vw-pc(20);
+    width: vw-pc(340);
+    border: vw-pc(8) solid #dbefe6;
+  }
+
+  .login-entry-title {
+    margin-bottom: vw-pc(25);
+    font-size: vw-pc(16);
+  }
+
+  .login-entry-submit-btn {
+    width: vw-pc(260);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .logins {
+    padding: 40px;
+  }
+
+  .login {
+    padding: 40px;
+    width: 560px;
+  }
+
+  .login-form {
+    margin-bottom: 30px;
+  }
+
+  .login-form dt {
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .login-submit-btn {
+    margin-bottom: 35px;
+    width: 320px;
+  }
+
+    .login-links li a {
+      font-size: 13px; font-size: 1.3rem;
+    }
+
+  .login-entry {
+    padding: 55px 20px;
+    width: 340px;
+    border: 8px solid #dbefe6;
+  }
+
+  .login-entry-title {
+    margin-bottom: 25px;
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .login-entry-submit-btn {
+    width: 260px;
+  }
+}
