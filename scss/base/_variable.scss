@@ -39,3 +39,23 @@ $pc-width: 1440;
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
+@font-face {
+  font-family: $font1;
+  src: url('../../font/NotoSansJP-Thin.otf') format("truetype");
+  src: url('../../font/NotoSansJP-Regular.otf') format("truetype");
+  src: url('../../font/NotoSansJP-Medium.otf') format("truetype");
+  src: url('../../font/NotoSansJP-Light.otf') format("truetype");
+  src: url('../../font/NotoSansJP-Bold.otf') format("truetype");
+  src: url('../../font/NotoSansJP-Black.otf') format("truetype");
+}
+@font-face {
+  font-family: $font2;
+  src: url('../../font/MPLUS1p-Thin.ttf') format("truetype");
+  src: url('../../font/MPLUS1p-Regular.ttf') format("truetype");
+  src: url('../../font/MPLUS1p-Medium.ttf') format("truetype");
+  src: url('../../font/MPLUS1p-Light.ttf') format("truetype");
+  src: url('../../font/MPLUS1p-ExtraBold.ttf') format("truetype");
+  src: url('../../font/MPLUS1p-Bold.ttf') format("truetype");
+  src: url('../../font/MPLUS1p-Black.ttf') format("truetype");
+}
