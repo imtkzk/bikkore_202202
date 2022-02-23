@@ -41,7 +41,7 @@ $pc-width: 1440;
 }
 
 @font-face {
-  font-family: $font1;
+  font-family: 'Noto Sans JP';
   src: url('../../font/NotoSansJP-Thin.otf') format("truetype");
   src: url('../../font/NotoSansJP-Regular.otf') format("truetype");
   src: url('../../font/NotoSansJP-Medium.otf') format("truetype");
@@ -50,7 +50,7 @@ $pc-width: 1440;
   src: url('../../font/NotoSansJP-Black.otf') format("truetype");
 }
 @font-face {
-  font-family: $font2;
+  font-family: 'M PLUS 1p';
   src: url('../../font/MPLUS1p-Thin.ttf') format("truetype");
   src: url('../../font/MPLUS1p-Regular.ttf') format("truetype");
   src: url('../../font/MPLUS1p-Medium.ttf') format("truetype");
