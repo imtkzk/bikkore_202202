@@ -76,6 +76,10 @@
   .aside .aside-item:nth-child(n + 2) {
     margin-top: vw-pc(30);
   }
+
+  .sec--highreturn {
+    margin-top: 0 !important;
+  }
 }
 
 @media screen and (min-width: $breakpoint2) {

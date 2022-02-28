@@ -37,12 +37,24 @@
   opacity: 1;
 }
 
+.season-slide .slide-pagination .swiper-pagination-bullet {
+  background-color: #ccc;
+}
+
 .slide-pagination .swiper-pagination-bullet:nth-child(n + 2) {
   margin-left: vw-sp(50);
 }
 
+.season-slide .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0;
+}
+
+.season-slide .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(n + 2) {
+  margin-left: vw-sp(25);
+}
+
 .slide-pagination .swiper-pagination-bullet-active {
-  background-color: $color-main;
+  background-color: $color-main !important;
 }
 
 @media screen and (min-width: $breakpoint1) {

@@ -135,6 +135,15 @@
   .cmn-head--br .cmn-head-en {
     margin: .3em 0 0 0;
   }
+
+  .cmn-head--rankbr {
+    display: block !important;
+  }
+
+  .cmn-head--rankbr .cmn-head-en {
+    margin: .3em 0 0 0;
+    padding-left: vw-sp(50);
+  }
 }
 
 

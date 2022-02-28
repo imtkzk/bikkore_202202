@@ -1,0 +1,88 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- tag - */
+
+.tag {
+  display: flex;
+  flex-wrap: wrap;
+  margin: vw-sp(40) 0 0 vw-sp(-30);
+  padding: vw-sp(35) vw-sp(20);
+  width: vw-sp(750);
+  background-color: $color-base;
+}
+
+.tag a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: vw-sp(160);
+}
+
+.tag a:nth-child(n + 6) {
+  margin-top: vw-sp(20);
+}
+
+.tag-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: vw-sp(80);
+}
+
+.tag a:nth-child(1) .tag-icon img {
+  width: vw-sp(46);
+}
+
+.tag a:nth-child(2) .tag-icon img {
+  width: vw-sp(34);
+}
+
+.tag a:nth-child(3) .tag-icon img {
+  width: vw-sp(51);
+}
+
+.tag a:nth-child(4) .tag-icon img {
+  width: vw-sp(37);
+}
+
+.tag a:nth-child(5) .tag-icon img {
+  width: vw-sp(40);
+}
+
+.tag a:nth-child(6) .tag-icon img {
+  width: vw-sp(61);
+}
+
+.tag a:nth-child(7) .tag-icon img {
+  width: vw-sp(50);
+}
+
+.tag a:nth-child(8) .tag-icon img {
+  width: vw-sp(49);
+}
+
+.tag a:nth-child(9) .tag-icon img {
+  width: vw-sp(49);
+}
+
+.tag a:nth-child(10) .tag-icon img {
+  width: vw-sp(44);
+}
+
+.tag-name {
+  min-height: 3em;
+  color: #333;
+  font-size: vw-sp(22);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5em;
+  letter-spacing: 0;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .tag {
+    display: none;
+  }
+}

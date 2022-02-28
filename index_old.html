@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ビッコレ</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <!-- Fonts Files
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;800;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">-->
+  <!-- CSS Files -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header id="header" class="header">
+    <div class="header-top">
+      <div>
+        <div class="header-top-left">
+          <h1 class="header-logo">
+            <a href="#"><img src="img/common/logo-bk.png" class="img--fit" alt="ビッコレ"></a>
+          </h1>
+          <div class="header-search none--sp">
+            <div class="search">
+              <form action="">
+                <input id="s" name="s" type="text" class="search-input" placeholder="案件を検索">
+                <input type="submit" class="search-btn" value="検索">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="header-top-right">
+          <p class="header-name none--sp">ようこそ<a href="#" class="on--opa">ゲスト</a>さん</p>
+          <div class="header-login">
+            <a href="#" class="login-btn"><span>ログイン</span></a>
+          </div>
+          <div class="header-apply">
+            <a href="#" class="apply-btn apply-btn--green apply-btn--short"><span>無料</span>新規会員登録</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <ul class="header-navi">
+        <li><a href="#" class="header-navi-top"><span>トップ</span></a></li>
+        <li><a href="#" class="header-navi-cat"><span>カテゴリー</span></a></li>
+        <li><a href="#" class="header-navi-recom"><span>おすすめ案件</span></a></li>
+        <li><a href="#" class="header-navi-intro"><span>友達紹介</span></a></li>
+        <li><a href="#" class="header-navi-mypage"><span>マイページ</span></a></li>
+      </ul>
+    </div>
+    <div id="search-modal" class="search-modal">
+      <div class="search-modal-overlay modal-close-btn"></div>
+      <div class="search-modal-scroll">
+        <div class="search-modal-box">
+          <div class="modal-close-top-btn modal-close-btn"></div>
+          <div class="search-modal-content">
+            <div class="search-modal-search">
+              <div class="search">
+                <form action="">
+                  <input id="s" name="s" type="text" class="search-input" placeholder="案件を検索">
+                  <input type="submit" class="search-btn" value="検索">
+                </form>
+              </div>
+            </div>
+            <div class="search-modal-category">
+              <div class="cmn-head">
+                <h2 class="cmn-head-jp">カテゴリー</h2>
+                <p class="cmn-head-en">category</p>
+              </div>
+              <ul class="category">
+                <li><a href="#">無料案件</a></li>
+                <li><a href="#">無料案件</a></li>
+                <li><a href="#">クレジットカード</a></li>
+                <li><a href="#">クレジットカード</a></li>
+                <li><a href="#">金融・投資</a></li>
+                <li><a href="#">金融・投資</a></li>
+                <li><a href="#">無料案件</a></li>
+                <li><a href="#">無料案件</a></li>
+                <li><a href="#">クレジットカード</a></li>
+                <li><a href="#">クレジットカード</a></li>
+                <li><a href="#">金融・投資</a></li>
+                <li><a href="#">金融・投資</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-close-bottom-btn modal-close-btn">
+            <span>閉じる</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="hero">
+      <div class="hero-content">
+        <div class="anim anim--left">
+          <div class="hero-catchs">
+            <p class="hero-catch none--sp"><span class="logo"><img src="img/hero/logo.png" alt="ビットコイン"></span>で<br><span class="big color">ビットコイン</span>を<br><span class="big">獲得</span>しよう</p>
+            <p class="hero-catch none--pc"><span class="logo"><img src="img/hero/logo.png" alt="ビットコイン"></span>を利用した副業で<br>誰でも<span class="big color">ビットコイン</span>を<br><span class="big">貯め</span>られます</p>
+          </div>
+        </div>
+        <div class="anim anim--bottom">
+          <div class="hero-btns">
+            <p class="hero-btn-label">1分で登録完了!</p>
+            <div class="hero-btn">
+              <a href="#" class="apply-btn apply-btn--green apply-btn--hign"><span>無料</span>登録はこちら</a>
+            </div>
+          </div>
+        </div>
+        <ul class="hero-point">
+          <li class="anim anim--bottom">
+            <span class="hero-point-num">01</span>
+            <p class="hero-point-head"><span class="line">ビッコレ経由の買い物で<br><span class="color">BTCが貯まる</span>！</span></p>
+          </li>
+          <li class="anim anim--bottom">
+            <span class="hero-point-num">02</span>
+            <p class="hero-point-head"><span class="line">広告案件をこなして<br><span class="color">誰でもBTCを獲得</span>可能！</span></p>
+          </li>
+          <li class="anim anim--bottom">
+            <span class="hero-point-num">03</span>
+            <p class="hero-point-head"><span class="line">手に入れたBTCで<br><span class="color">仮想通貨投資</span>を始めよう！</span></p>
+          </li>
+        </ul>
+        <div class="hero-image anim anim--right">
+          <picture>
+            <source media="(min-width:751px)" srcset="img/hero/businessman.png 1x,img/hero/businessman-2x.png 2x">
+            <source media="(max-width:750px)" srcset="img/hero/businessman_sp.png">
+            <img src="img/hero/businessman.png" class="img--fit" alt="businessman">
+          </picture>
+        </div>
+        <div class="anim anim--left">
+          <p class="hero-desc">獲得したBTCは<br><span>すぐに出金可能</span>！</p>
+        </div>
+      </div>
+    </div>
+    <div class="use none--pc">
+      <h2 class="intro-head">ビッコレの利用方法</h2>
+      <ul class="use-list">
+        <li>
+          <p class="use-list-num">01</p>
+          <div class="use-list-image">
+            <img src="img/use/image01.png" class="img--fit" alt="広告案件をこなして誰でもビットコインをGET!">
+          </div>
+          <h3 class="use-list-head"><span class="line">広告案件をこなして<br><span class="color">誰でもビットコイン</span>をGET!</span></h3>
+          <div class="use-list-desc">
+            <p>ビッコレ経由で広告を利用するとビットコインを獲得できます。</p>
+          </div>
+        </li>
+        <li>
+          <p class="use-list-num">02</p>
+          <div class="use-list-image">
+            <img src="img/use/image02.png" class="img--fit" alt="ビッコレ経由の買い物でビットコインをGET!">
+          </div>
+          <h3 class="use-list-head"><span class="line">ビッコレ経由の買い物で<br><span class="color">ビットコイン</span>をGET!</span></h3>
+          <div class="use-list-desc">
+            <p>ビッコレ経由の買い物でどんどんビットコインを獲得できます。</p>
+          </div>
+        </li>
+        <li>
+          <p class="use-list-num">03</p>
+          <div class="use-list-image">
+            <img src="img/use/image03.png" class="img--fit" alt="友達紹介でビットコインをGET!">
+          </div>
+          <h3 class="use-list-head"><span class="line">友達紹介で<span class="color">ビットコイン</span>をGET!</span></h3>
+          <div class="use-list-desc">
+            <p>友達をビッコレに紹介するとビットコインを獲得できます。</p>
+          </div>
+        </li>
+        <li>
+          <p class="use-list-num">04</p>
+          <div class="use-list-image">
+            <img src="img/use/image04.png" class="img--fit" alt="溜まったビットコインで仮想通貨投資をスタート!">
+          </div>
+          <h3 class="use-list-head"><span class="line">溜まったビットコインで<br><span class="color">仮想通貨投資</span>をスタート!</span></h3>
+          <div class="use-list-desc">
+            <p>獲得したビットコインの価格が上がると、自分の資産もどんどん増えていきます。</p>
+          </div>
+        </li>
+      </ul>
+      <div class="use-btn">
+        <a href="#" class="apply-btn apply-btn--green apply-btn--hign"><span>今すぐ</span>無料会員登録をする</a>
+      </div>
+    </div>
+    <div class="contents">
+      <div class="content content--multi content--multi3">
+        <aside class="aside none--sp">
+          <div class="aside-item">
+            <div class="info-box">
+              <div class="cmn-head">
+                <h2 class="cmn-head-jp">お知らせ</h2>
+                <p class="cmn-head-en">info</p>
+              </div>
+              <ul class="info">
+                <li>
+                  <a href="#" class="on--opa">
+                    <div class="info-new"><span>new</span></div>
+                    <div class="info-heads">
+                      <p class="info-date">2021.05.25</p>
+                      <p class="info-cat">カテゴリ</p>
+                    </div>
+                    <h3 class="info-title">【新機能】好きな広告をお友達にシェアしよう！モッピーの紹介方法が・・・</h3>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="on--opa">
+                    <div class="info-new"><span>new</span></div>
+                    <div class="info-heads">
+                      <p class="info-date">2021.05.25</p>
+                      <p class="info-cat">カテゴリ</p>
+                    </div>
+                    <h3 class="info-title">【新機能】好きな広告をお友達にシェアしよう！モッピーの紹介方法が・・・</h3>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="on--opa">
+                    <div class="info-heads">
+                      <p class="info-date">2021.05.25</p>
+                      <p class="info-cat">カテゴリ</p>
+                    </div>
+                    <h3 class="info-title">【新機能】好きな広告をお友達にシェアしよう！モッピーの紹介方法が・・・</h3>
+                  </a>
+                </li>
+              </ul>
+              <div class="info-more">
+                <a href="#"><span>一覧を見る</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="aside-item">
+            <div class="cmn-head">
+              <h2 class="cmn-head-jp">ビッコレTV</h2>
+              <p class="cmn-head-en">you tube</p>
+            </div>
+            <ul class="video">
+              <li>
+                <div class="video-box">
+                  <img src="sample/video.png" class="img--fit" alt="Youtube動画">
+                </div>
+              </li>
+              <li>
+                <div class="video-box">
+                  <img src="sample/video.png" class="img--fit" alt="Youtube動画">
+                </div>
+              </li>
+              <li>
+                <div class="video-box">
+                  <img src="sample/video.png" class="img--fit" alt="Youtube動画">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="aside-item">
+            <div class="cmn-head">
+              <h2 class="cmn-head-jp">カテゴリー</h2>
+              <p class="cmn-head-en">category</p>
+            </div>
+            <ul class="category">
+              <li><a href="#">無料案件</a></li>
+              <li><a href="#">クレジットカード</a></li>
+              <li><a href="#">金融・投資</a></li>
+              <li><a href="#">無料案件</a></li>
+              <li><a href="#">クレジットカード</a></li>
+              <li><a href="#">金融・投資</a></li>
+            </ul>
+          </div>
+        </aside>
+        <main class="main">
+          <section>
+            <div class="cmn-head">
+              <h2 class="cmn-head-jp">高還元案件</h2>
+              <p class="cmn-head-en">high return</p>
+            </div>
+            <ul class="post post--special">
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                      <ul class="post-time">
+                        <li>BTC発生：30分程度</li>
+                        <li>BTC承認：45日程度</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                      <ul class="post-time">
+                        <li>BTC発生：30分程度</li>
+                        <li>BTC承認：45日程度</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                      <ul class="post-time">
+                        <li>BTC発生：30分程度</li>
+                        <li>BTC承認：45日程度</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                      <ul class="post-time">
+                        <li>BTC発生：30分程度</li>
+                        <li>BTC承認：45日程度</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                      <ul class="post-time">
+                        <li>BTC発生：30分程度</li>
+                        <li>BTC承認：45日程度</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                      <ul class="post-time">
+                        <li>BTC発生：30分程度</li>
+                        <li>BTC承認：45日程度</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span>円相当のBTC</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <div class="hot-head">
+              <h2 class="hot-head-jp">今日の<span><img src="img/common/gekiathu.png" class="img--fit" alt="激アツ"></span>案件</h2>
+              <p class="hot-head-en">hot contents</p>
+            </div>
+            <ul class="post post--special post--hot">
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                      <ul class="post-time">
+                        <li>BTC発生：30分程度</li>
+                        <li>BTC承認：45日程度</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                      <ul class="post-time">
+                        <li>BTC発生：30分程度</li>
+                        <li>BTC承認：45日程度</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span>円相当のBTC</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <div class="cmn-head">
+              <h2 class="cmn-head-jp">チャレンジボーナス</h2>
+              <p class="cmn-head-en">Challenge bonus</p>
+            </div>
+            <ul class="bonus bonus-front">
+              <li>
+                <a href="#" class="on--opa">
+                  <div class="bonus-post">
+                    <h3 class="post-title">フランチャイズの窓口「初心者ビジ…</h3>
+                    <div class="post-in">
+                      <div class="post-image">
+                        <img src="sample/post.png" class="img--fit" alt="投稿">
+                      </div>
+                      <div class="post-content">
+                        <p class="post-desc">資料請求（開業資金101万円以…</p>
+                        <ul class="post-time">
+                          <li>BTC発生：5分</li>
+                          <li>BTC承認：60日</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p class="post-price"><span class="red">9,999</span>円相当のBTC</p>
+                  </div>
+                  <div class="bonus-balloon">
+                    <p>成功でさらに<span>300</span>円ゲット！</p>
+                  </div>
+                  <div class="bonus-box">
+                    <div class="bonus-box-content">
+                      <h4 class="bonus-box-head">現在の達成度</h4>
+                      <div class="bonus-bar">
+                        <div style="width: 40%;"><span>40%</span></div>
+                      </div>
+                      <div class="bonus-datas">
+                        <dl class="bonus-data">
+                          <dt>チャレンジ人数</dt>
+                          <dd>30人</dd>
+                        </dl>
+                        <dl class="bonus-data">
+                          <dt>現在の参加人数</dt>
+                          <dd>30人以上</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="bonus-box-time">
+                      <h4 class="bonus-box-time-head">残り<span class="none--sp">時間</span></h4>
+                      <p id="remaining01" class="bonus-box-time-remaining"></p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <div class="bonus-post">
+                    <h3 class="post-title">フランチャイズの窓口「初心者ビジ…</h3>
+                    <div class="post-in">
+                      <div class="post-image">
+                        <img src="sample/post.png" class="img--fit" alt="投稿">
+                      </div>
+                      <div class="post-content">
+                        <p class="post-desc">資料請求（開業資金101万円以…</p>
+                        <ul class="post-time">
+                          <li>BTC発生：5分</li>
+                          <li>BTC承認：60日</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p class="post-price"><span class="red">9,999</span>円相当のBTC</p>
+                  </div>
+                  <div class="bonus-balloon">
+                    <p>成功でさらに<span>300</span>円ゲット！</p>
+                  </div>
+                  <div class="bonus-box">
+                    <div class="bonus-box-content">
+                      <h4 class="bonus-box-head">現在の達成度</h4>
+                      <div class="bonus-bar">
+                        <div class="bonus-bar-full" style="width: 100%;"><span>チャレンジ成功！</span></div>
+                      </div>
+                      <div class="bonus-datas">
+                        <dl class="bonus-data">
+                          <dt>チャレンジ人数</dt>
+                          <dd>30人</dd>
+                        </dl>
+                        <dl class="bonus-data">
+                          <dt>現在の参加人数</dt>
+                          <dd>30人以上</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="bonus-box-time">
+                      <h4 class="bonus-box-time-head">残り<span class="none--sp">時間</span></h4>
+                      <p id="remaining02" class="bonus-box-time-remaining"></p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <p class="bonus-caution">チャレンジ成功後のご利用も、<br class="br--sp">ボーナスポイントの獲得は適用されます。</p>
+            <div class="bonus-btn">
+              <a href="bonus.html"><span>チャレンジ一覧はこちら</span></a>
+            </div>
+          </section>
+          <section class="none--pc">
+            <div class="recom-box">
+              <div class="cmn-head">
+                <h2 class="cmn-head-jp">スタッフのオススメ</h2>
+                <p class="cmn-head-en">recommend</p>
+              </div>
+              <ul class="recom">
+                <li>
+                  <a href="#" class="on--opa">
+                    <div class="recom-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="recom-content">
+                      <div class="recom-in">
+                        <h3 class="recom-title">ITトレンド【レビュー投稿】</h3>
+                        <p class="recom-desc">IT製品のレビュー投稿完了テキストテキスト</p>
+                      </div>
+                      <p class="recom-price"><span class="red">9,999</span>円相当のBTC</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="on--opa">
+                    <div class="recom-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="recom-content">
+                      <div class="recom-in">
+                        <h3 class="recom-title">ITトレンド【レビュー投稿】</h3>
+                        <p class="recom-desc">IT製品のレビュー投稿完了テキストテキスト</p>
+                      </div>
+                      <p class="recom-price"><span class="red">9,999</span>円相当のBTC</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="on--opa">
+                    <div class="recom-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="recom-content">
+                      <div class="recom-in">
+                        <h3 class="recom-title">ITトレンド【レビュー投稿】</h3>
+                        <p class="recom-desc">IT製品のレビュー投稿完了テキストテキスト</p>
+                      </div>
+                      <p class="recom-price"><span class="red">9,999</span>円相当のBTC</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="on--opa">
+                    <div class="recom-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="recom-content">
+                      <div class="recom-in">
+                        <h3 class="recom-title">ITトレンド【レビュー投稿】</h3>
+                        <p class="recom-desc">IT製品のレビュー投稿完了テキストテキスト</p>
+                      </div>
+                      <p class="recom-price"><span class="red">9,999</span>円相当のBTC</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="on--opa">
+                    <div class="recom-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="recom-content">
+                      <div class="recom-in">
+                        <h3 class="recom-title">ITトレンド【レビュー投稿】</h3>
+                        <p class="recom-desc">IT製品のレビュー投稿完了テキストテキスト</p>
+                      </div>
+                      <p class="recom-price"><span class="red">9,999</span>円相当のBTC</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <div class="rank-box">
+              <div class="cmn-head cmn-head--rank">
+                <h2 class="cmn-head-jp">ランキング</h2>
+                <p class="cmn-head-en">rank</p>
+              </div>
+              <ul class="rank">
+                <li>
+                  <a href="#" class="on--opa">
+                    <div class="rank-num">
+                      <p><span>1</span>位</p>
+                    </div>
+                    <div class="rank-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="rank-content">
+                      <div class="rank-in">
+                        <h3 class="rank-title">ITトレンド【レビュー投稿】</h3>
+                        <p class="rank-desc">IT製品のレビュー投稿完了テキストテキスト</p>
+                      </div>
+                      <p class="rank-price"><span class="red">9,999</span>円相当のBTC</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="on--opa">
+                    <div class="rank-num">
+                      <p><span>2</span>位</p>
+                    </div>
+                    <div class="rank-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="rank-content">
+                      <div class="rank-in">
+                        <h3 class="rank-title">ITトレンド【レビュー投稿】</h3>
+                        <p class="rank-desc">IT製品のレビュー投稿完了テキストテキスト</p>
+                      </div>
+                      <p class="rank-price"><span class="red">9,999</span>円相当のBTC</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="on--opa">
+                    <div class="rank-num">
+                      <p><span>3</span>位</p>
+                    </div>
+                    <div class="rank-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="rank-content">
+                      <div class="rank-in">
+                        <h3 class="rank-title">ITトレンド【レビュー投稿】</h3>
+                        <p class="rank-desc">IT製品のレビュー投稿完了テキストテキスト</p>
+                      </div>
+                      <p class="rank-price"><span class="red">9,999</span>円相当のBTC</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="on--opa">
+                    <div class="rank-num">
+                      <p><span>4</span>位</p>
+                    </div>
+                    <div class="rank-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="rank-content">
+                      <div class="rank-in">
+                        <h3 class="rank-title">ITトレンド【レビュー投稿】</h3>
+                        <p class="rank-desc">IT製品のレビュー投稿完了テキストテキスト</p>
+                      </div>
+                      <p class="rank-price"><span class="red">9,999</span>円相当のBTC</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="on--opa">
+                    <div class="rank-num">
+                      <p><span>5</span>位</p>
+                    </div>
+                    <div class="rank-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="rank-content">
+                      <div class="rank-in">
+                        <h3 class="rank-title">ITトレンド【レビュー投稿】</h3>
+                        <p class="rank-desc">IT製品のレビュー投稿完了テキストテキスト</p>
+                      </div>
+                      <p class="rank-price"><span class="red">9,999</span>円相当のBTC</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="none--pc">
+            <div class="cmn-head">
+              <h2 class="cmn-head-jp">ビッコレTV</h2>
+              <p class="cmn-head-en">you tube</p>
+            </div>
+            <ul class="video">
+              <li>
+                <div class="video-box">
+                  <img src="sample/video.png" class="img--fit" alt="Youtube動画">
+                </div>
+              </li>
+              <li>
+                <div class="video-box">
+                  <img src="sample/video.png" class="img--fit" alt="Youtube動画">
+                </div>
+              </li>
+              <li>
+                <div class="video-box">
+                  <img src="sample/video.png" class="img--fit" alt="Youtube動画">
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <div class="cmn-head">
+              <h2 class="cmn-head-jp">新着案件</h2>
+              <p class="cmn-head-en">new</p>
+            </div>
+            <ul class="post post--normal">
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+            </ul>
+            <div class="main-btn">
+              <a href="#" class="cmn-btn cmn-btn--og"><span>新着案件をもっと見る</span></a>
+            </div>
+          </section>
+          <section>
+            <div class="cmn-head">
+              <h2 class="cmn-head-jp">アプリでBTCを獲得</h2>
+              <p class="cmn-head-en">app</p>
+            </div>
+            <ul class="post post--normal">
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <div class="cmn-head">
+              <h2 class="cmn-head-jp"><span class="red">無料</span>でBTCを獲得</h2>
+              <p class="cmn-head-en">free</p>
+            </div>
+            <ul class="post post--normal">
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <div class="cmn-head cmn-head--br">
+              <h2 class="cmn-head-jp"><span class="og">実質無料</span>でBTCを獲得<span class="baloon">100%還元</span></h2>
+              <p class="cmn-head-en">100% return</p>
+            </div>
+            <ul class="post post--normal">
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span><br class="br--sp">円相当のBTC</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <div class="cmn-head">
+              <h2 class="cmn-head-jp">買い物でBTCを貯める</h2>
+              <p class="cmn-head-en">shopping</p>
+            </div>
+            <ul class="post post--normal">
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="blue">5%</span>分のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="blue">5%</span>分のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="blue">5%</span>分のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="blue">5%</span>分のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="blue">5%</span>分のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="blue">5%</span>分のBTC</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <div class="cmn-head">
+              <h2 class="cmn-head-jp">月額課金サービスでBTCを貯める</h2>
+              <p class="cmn-head-en">Billing</p>
+            </div>
+            <ul class="post post--normal">
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="blue">5%</span>分のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="blue">5%</span>分のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="blue">5%</span>分のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="blue">5%</span>分のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="blue">5%</span>分のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="blue">5%</span>分のBTC</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <div class="special-head">
+              <h2 class="special-head-jp">特集</h2>
+              <p class="special-head-en">special contents</p>
+            </div>
+            <ul class="special">
+              <li>
+                <a href="#" class="on--opa">
+                  <div class="special-label"><span>注目</span></div>
+                  <img src="sample/special.png" class="img--fit" alt="特集画像">
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <div class="special-label"><span>注目</span></div>
+                  <img src="sample/special.png" class="img--fit" alt="特集画像">
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <div class="special-label"><span>注目</span></div>
+                  <img src="sample/special.png" class="img--fit" alt="特集画像">
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <img src="sample/special.png" class="img--fit" alt="特集画像">
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <img src="sample/special.png" class="img--fit" alt="特集画像">
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <img src="sample/special.png" class="img--fit" alt="特集画像">
+                </a>
+              </li>
+            </ul>
+            <div class="main-btn">
+              <a href="#" class="cmn-btn cmn-btn--og"><span>ご利用方法はこちら</span></a>
+            </div>
+          </section>
+        </main>
+        <aside class="aside none--sp">
+          <div class="aside-item">
+            <ul class="banner">
+              <li>
+                <a href="#" class="on--opa">
+                  <img src="sample/banner.png" class="img--fit" alt="バナー広告">
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <img src="sample/banner.png" class="img--fit" alt="バナー広告">
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <img src="sample/banner.png" class="img--fit" alt="バナー広告">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="aside-item">
+            <h2 class="recom-head">あなたにオススメ</h2>
+            <ul class="post post--recom">
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                      <ul class="post-time">
+                        <li>BTC発生：30分程度</li>
+                        <li>BTC承認：45日程度</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                      <ul class="post-time">
+                        <li>BTC発生：30分程度</li>
+                        <li>BTC承認：45日程度</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="post-title">ITトレンド【レビュー投稿】</h3>
+                  <div class="post-in">
+                    <div class="post-image">
+                      <img src="sample/post.png" class="img--fit" alt="投稿">
+                    </div>
+                    <div class="post-content">
+                      <p class="post-desc">IT製品のレビュー投稿完了テキ...</p>
+                      <ul class="post-time">
+                        <li>BTC発生：30分程度</li>
+                        <li>BTC承認：45日程度</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="post-price"><span class="red">9,999</span>円相当のBTC</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="aside-item">
+            <div class="timeline">
+              <img src="sample/twitter.png" class="img--fit" alt="Twitter">
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <div class="pr">
+      <div class="l-pr">
+        <div class="prtitle">
+          <h3>PR</h3>
+        </div>
+        <div class="prbox">
+          <div class="google-ad-box"><iframe src="" frameborder="0"></iframe></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-navi">
+        <div>
+          <p class="footer-navi-head">ポイントを貯める</p>
+          <ul class="footer-navi-list">
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">無料案件</a></li>
+            <li><a href="#">高額案件</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-navi-head">ポイントを管理</p>
+          <ul class="footer-navi-list">
+            <li><a href="#">ユーザー登録</a></li>
+            <li><a href="#">ログイン</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-navi-head">サポート</p>
+          <ul class="footer-navi-list">
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-spnavi">
+        <a href="#">ヘルプ</a>
+        <a href="#">利用規約</a>
+        <a href="#">プライバシーポリシー</a>
+        <a href="#">会社概要</a>
+        <a href="#">お問い合わせ</a>
+      </div>
+      <div class="footer-subnavi">
+        <a href="#">PC版を表示</a>
+        <a href="#">ログアウト</a>
+      </div>
+      <div class="footer-logo">
+        <img src="img/common/logo-wh.png" class="img--fit" alt="ビッコレ">
+      </div>
+      <div class="footer-subnavi">
+        <a href="#">広告掲載について</a>
+      </div>
+    </div>
+    <div class="floating">
+      <div class="floating-btns">
+        <a href="#" class="floating-btn--top"><span>トップ</span></a>
+        <a href="" id="search-btn" class="floating-btn--search" data-target="search-modal"><span>探す</span></a>
+        <a href="#" class="floating-btn--recom"><span>おすすめ</span></a>
+        <a href="#" class="floating-btn--intro"><span>友達紹介</span></a>
+        <a href="#" class="floating-btn--mypage"><span>マイページ</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <script>document.write(new Date().getFullYear());</script> Bikkore</p>
+    </div>
+  </footer>
+  <!--   JS Files   -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/lib/ofi.js"></script>
+  <script src="js/lib/picturefill.js"></script>
+  <script src="js/lib/pf.intrinsic.js"></script>
+  <script src="js/lib/inview.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/top.js"></script>
+  <script>
+    // カウントダウンする日付の設定（例：Jan 5, 2021 15:37:25）
+    var countDownDate01 = new Date("Feb 15, 2022 23:59:59").getTime();
+    var x01 = setInterval(function() {
+      var now01 = new Date().getTime();
+      var distance01 = countDownDate01 - now01;
+      var days01 = Math.floor(distance01 / (1000 * 60 * 60 * 24));
+      var hours01 = Math.floor((distance01 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes01 = Math.floor((distance01 % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds01 = Math.floor((distance01 % (1000 * 60)) / 1000);
+
+      // id="remaining01"に結果を表示する
+      document.getElementById("remaining01").innerHTML = days01.toString().padStart(2, "0") + "日" + hours01.toString().padStart(2, "0") + "時間"
+      + minutes01.toString().padStart(2, "0") + "分" + seconds01.toString().padStart(2, "0") + "秒";
+
+      // カウントタウンが終わった際の表示（例：終了しました）
+      if (distance01 < 0) {
+        clearInterval(x01);
+        document.getElementById("remaining01").innerHTML = "終了しました";
+      }
+    }, 1000);
+  </script>
+  <script>
+    // カウントダウンする日付の設定（例：Jan 5, 2021 15:37:25）
+    var countDownDate02 = new Date("Feb 25, 2022 23:59:59").getTime();
+    var x02 = setInterval(function() {
+      var now02 = new Date().getTime();
+      var distance02 = countDownDate02 - now02;
+      var days02 = Math.floor(distance02 / (1000 * 60 * 60 * 24));
+      var hours02 = Math.floor((distance02 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes02 = Math.floor((distance02 % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds02 = Math.floor((distance02 % (1000 * 60)) / 1000);
+
+      // id="remaining01"に結果を表示する
+      document.getElementById("remaining02").innerHTML = days02.toString().padStart(2, "0") + "日" + hours02.toString().padStart(2, "0") + "時間"
+      + minutes02.toString().padStart(2, "0") + "分" + seconds02.toString().padStart(2, "0") + "秒";
+
+      // カウントタウンが終わった際の表示（例：終了しました）
+      if (distance02 < 0) {
+        clearInterval(x02);
+        document.getElementById("remaining02").innerHTML = "終了しました";
+      }
+    }, 1000);
+  </script>
+</body>
+
+</html>

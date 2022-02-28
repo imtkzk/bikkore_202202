@@ -1,0 +1,16 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- season - */
+
+.season-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+
+@media screen and (min-width: $breakpoint1) {
+
+  .season {
+    display: none;
+  }
+}

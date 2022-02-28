@@ -1,0 +1,496 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- scroll - */
+
+.scroll-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 0 vw-sp(30) vw-sp(-30) !important;
+  padding: 0 vw-sp(30);
+  height: vw-sp(90);
+  background-color: $color-base;
+}
+
+.scroll-menu .slick-track {
+  padding: vw-sp(15) 0;
+}
+
+.scroll-menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: vw-sp(30);
+  font-size: vw-sp(26);
+  font-weight: 700;
+  text-align: center;
+  line-height: vw-sp(60);
+  transition: background-color.3s, color .3s;
+  cursor: pointer
+}
+
+.scroll-menu .slick-track .scroll-menu-item:nth-child(n + 2) {
+  margin-left: .25em;
+}
+
+.scroll-menu .slick-slide.slick-current {
+  background-color: $color-main;
+  color: $color-base;
+}
+
+.scroll-menu-prev,
+.scroll-menu-next, {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 25px;
+  height: 45px;
+  background-color: #ffdebd;
+  border-radius: 10px 0 0 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index:1;
+}
+
+.scroll-menu-prev {
+  left: 0;
+  border-radius: 10px 0 0 10px;
+}
+
+.scroll-menu-next {
+  right: 0;
+  border-radius: 0 10px 10px 0;
+}
+
+.scroll-menu-prev:before,
+.scroll-menu-next:before {
+  content: '';
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  width: 6px;
+  height: 9px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+}
+
+.scroll-menu-prev:before {
+  background-image: url(../img/scroll/prev.svg);
+}
+
+.scroll-menu-next:before {
+  background-image: url(../img/scroll/next.svg);
+}
+
+.scroll-menu .slick-initialized {
+  display:block
+}
+
+.scroll-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: vw-sp(100);
+  background-color: $color-main;
+  border-radius: vw-sp(10) vw-sp(10) 0 0;
+  color: $color-base;
+  font-size: vw-sp(48);
+  font-weight: 700;
+}
+
+.scroll-rank {
+  padding: vw-sp(30) vw-sp(30) vw-sp(30) vw-sp(30);
+  background-color: $color-base;
+}
+
+.scroll-rank > li {
+  position: relative;
+  display: block;
+  padding: vw-sp(40) 0;
+}
+
+.scroll-rank > li:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: vw-sp(-2.5);
+  display: inline-block;
+  width: 100%;
+  height: vw-sp(5);
+  background-image: url(../img/scroll/line_sp.png);
+  background-size: auto vw-sp(5);
+  background-repeat: repeat-x;
+}
+
+.scroll-rank > li:last-child:after {
+  content: none;
+}
+
+.scroll-rank > li a {
+  position: relative;
+  display: block;
+}
+
+.scroll-rank-heads {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: vw-sp(10);
+}
+
+.scroll-rank-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: vw-sp(60);
+  height: vw-sp(60);
+  background-color: #cccccc;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.scroll-rank-num p {
+  font-family: $font2;
+  font-size: vw-sp(22);
+  font-weight: 800;
+  text-align: center;
+  span {
+    display: inline-block;
+    margin-right: .05em;
+    font-size: 1.6em;
+    font-style: italic;
+  }
+}
+
+.scroll-rank > li:nth-child(1) .scroll-rank-num,
+.scroll-rank > li:nth-child(2) .scroll-rank-num,
+.scroll-rank > li:nth-child(3) .scroll-rank-num {
+  background-color: #fcff00;
+}
+
+.scroll-rank-head {
+  color: $color-main;
+  font-size: vw-sp(30);
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+.scroll-rank-image {
+  width: vw-sp(120);
+}
+
+.scroll-rank-image img {
+  @include ofi;
+  height: vw-sp(120);
+}
+
+.scroll-rank-sub {
+  margin-bottom: 1em;
+  font-size: vw-sp(22);
+  font-weight: 400;
+  line-height: 1.38em;
+}
+
+.scroll-rank-btc {
+  font-size: vw-sp(22);
+  font-weight: 700;
+  text-align: right;
+  span {
+    display: inline-block;
+    margin-right: .1em;
+    color: $color-red;
+    font-family: $font2;
+    font-size: vw-sp(48);
+    font-weight: 800;
+  }
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .scroll-menu {
+    width: vw-sp(750);
+    overflow-x: scroll;
+  }
+
+  #rank-scroll-menu .scroll-menu-prev,
+  #rank-scroll-menu .scroll-menu-next {
+    display: none !important;
+  }
+
+  .scroll-rank li a {
+    padding-left: vw-sp(140);
+  }
+
+  .scroll-rank-num {
+    position: absolute;
+    top: vw-sp(-30);
+    left: 0;
+  }
+
+  .scroll-rank-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .scroll-rank-sub {
+    color: #666;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .scroll-menu {
+    margin: 0 0 vw-pc(20) 0 !important;
+    padding: 0 vw-pc(30);
+    height: vw-pc(45);
+    border-radius: vw-pc(10);
+  }
+
+  .scroll-menu .slick-track {
+    padding: vw-pc(5) 0;
+  }
+
+  .scroll-menu-item {
+    border-radius: vw-pc(18);
+    font-size: vw-pc(15);
+    line-height: vw-pc(35);
+  }
+
+    #rank-scroll-menu .slick-slide.slick-current+.slick-active {
+    background-color: $color-main;
+    color: $color-base;
+  }
+
+  .scroll-menu-item:hover {
+    background-color: #ffdebd;
+    color: $color-text;
+  }
+
+  .scroll-menu-prev,
+  .scroll-menu-next, {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: vw-pc(25);
+    height: vw-pc(45);
+    background-color: #ffdebd;
+    border-radius: vw-pc(10) 0 0 vw-pc(10);
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index:1;
+  }
+
+  .scroll-menu-prev {
+    left: 0;
+    border-radius: vw-pc(10) 0 0 vw-pc(10);
+  }
+
+  .scroll-menu-next {
+    right: 0;
+    border-radius: 0 vw-pc(10) vw-pc(10) 0;
+  }
+
+  .scroll-menu-prev:before,
+  .scroll-menu-next:before {
+    content: '';
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    width: vw-pc(6);
+    height: vw-pc(9);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+  }
+
+  .scroll-head {
+    height: vw-pc(50);
+    border-radius: vw-pc(10) vw-pc(10) 0 0;
+    font-size: vw-pc(24);
+  }
+
+  #rank-scroll-content .slick-track > div:nth-child(n + 2) {
+    margin-left: vw-pc(10);
+  }
+
+  .scroll-rank {
+    padding: 0 vw-pc(20) vw-pc(15) vw-pc(20);
+  }
+
+  .scroll-rank > li {
+    padding: vw-pc(12) 0;
+  }
+
+  .scroll-rank > li:after {
+    bottom: vw-pc(-1.5);
+    height: vw-pc(3);
+    background-image: url(../img/scroll/line.png);
+    background-image: image-set(url(../img/scroll/line.png) 1x, url(../img/scroll/line-2x.png) 2x);
+    background-image: -webkit-image-set(url(../img/scroll/line.png) 1x, url(../img/scroll/line-2x.png) 2x);
+    background-size: auto vw-pc(3);
+  }
+
+  .scroll-rank-heads {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: vw-pc(10);
+  }
+
+  .scroll-rank-num {
+    position: relative;
+    width: vw-pc(50);
+    height: vw-pc(50);
+  }
+
+  .scroll-rank-num p {
+    font-size: vw-pc(15);
+  }
+
+  .scroll-rank-head {
+    width: vw-pc(255);
+    font-size: vw-pc(18);
+  }
+
+  .scroll-rank-contents {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .scroll-rank-image {
+    width: vw-pc(80);
+  }
+
+  .scroll-rank-image img {
+    height: vw-pc(80);
+  }
+
+  .scroll-rank-content {
+    width: vw-pc(230);
+  }
+
+  .scroll-rank-sub {
+    font-size: vw-pc(13);
+    font-weight: 700;
+  }
+
+  .scroll-rank-btc {
+    font-size: vw-pc(18);
+    span {
+      font-size: vw-pc(32);
+    }
+  }
+
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .scroll-menu {
+    margin: 0 0 20px 0 !important;
+    padding: 0 30px;
+    height: 45px;
+    border-radius: 10px;
+  }
+
+  .scroll-menu .slick-track {
+    padding: 5px 0;
+  }
+
+  .scroll-menu-item {
+    border-radius: 18px;
+    font-size: 15px; font-size: 1.5rem;
+    line-height: 35px;
+  }
+
+  .scroll-menu-prev,
+  .scroll-menu-next, {
+    width: 25px;
+    height: 45px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .scroll-menu-prev {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .scroll-menu-next {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .scroll-menu-prev:before,
+  .scroll-menu-next:before {
+    width: 6px;
+    height: 9px;
+    transform: translate(-50%, -50%);
+  }
+
+  .scroll-head {
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    font-size: 24px; font-size: 2.4rem;
+  }
+
+  #rank-scroll-content .slick-track > div:nth-child(n + 2) {
+    margin-left: 10px;
+  }
+
+  .scroll-rank {
+    padding: 0 20px 15px 20px;
+  }
+
+  .scroll-rank > li {
+    padding: 12px 0;
+  }
+
+  .scroll-rank > li:after {
+    bottom: -1.5px;
+    height: 3px;
+    background-size: auto 3px;
+  }
+
+  .scroll-rank-heads {
+    margin-bottom: 10px;
+  }
+
+  .scroll-rank-num {
+    width: 50px;
+    height: 50px;
+  }
+
+  .scroll-rank-num p {
+    font-size: 15px; font-size: 1.5rem;
+  }
+
+  .scroll-rank-head {
+    width: 255px;
+    font-size: 18px; font-size: 1.8rem;
+  }
+
+  .scroll-rank-image {
+    width: 80px;
+  }
+
+  .scroll-rank-image img {
+    height: 80px;
+  }
+
+  .scroll-rank-content {
+    width: 230px;
+  }
+
+  .scroll-rank-sub {
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .scroll-rank-btc {
+    font-size: 18px; font-size: 1.8rem;
+    span {
+      font-size: 32px; font-size: 3.2rem;
+    }
+  }
+
+}

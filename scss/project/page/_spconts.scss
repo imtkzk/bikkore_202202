@@ -1,0 +1,236 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- spconts - */
+
+.spconts-main {
+  position: relative;
+  margin: 0 auto;
+  padding: vw-sp(30) 0;
+  width: vw-sp(690);
+}
+
+.spconts-main:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  height: 100%;
+  background-color: $color-base;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.spconts-head {
+  margin-bottom: .8em;
+  font-size: vw-sp(36);
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .spconts-main {
+    padding: vw-pc(25) 0;
+    width: vw-pc(1200);
+  }
+
+  .spconts section {
+    position: relative;
+    margin-top: 0 !important;
+    padding: vw-pc(30) 0 vw-pc(40) 0;
+  }
+
+  .spconts section:first-child {
+    padding-top: 0 !important;
+  }
+
+  .spconts section:last-child {
+    padding-bottom: 0 !important;
+  }
+
+  .spconts section:nth-child(even):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+    height: 100%;
+    background-color: #fffbf7;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  .spconts-head {
+    font-size: vw-pc(18);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .spconts-main {
+    padding: 25px 0;
+    width: 1200px;
+  }
+
+  .spconts section {
+    padding: 30px 0 40px 0;
+  }
+
+  .spconts-head {
+    font-size: 18px; font-size: 1.8rem;
+  }
+}
+
+.post-spconts {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: vw-sp(-10);
+}
+
+.post-spconts > li {
+  margin-left: vw-sp(10);
+  width: calc(50% - #{vw-sp(10)});
+}
+
+.post-spconts > li a {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: vw-sp(15) vw-sp(12) vw-sp(20) vw-sp(12);
+  background-color: $color-base;
+  border-color: $color-base;
+  border-style: solid;
+  border-width: vw-sp(4);
+  transition: .3s;
+}
+
+.post-spconts .post-image {
+  margin: 0 auto vw-sp(15) auto;
+  width: vw-sp(135);
+  img {
+    height: vw-sp(135);
+  }
+}
+
+.post-spconts .post-title {
+  font-size: vw-sp(26);
+}
+
+.post-spconts .post-desc {
+  font-size: vw-sp(22);
+}
+
+.post-spconts .post-price {
+  font-size: vw-sp(22);
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+.post-spconts > li:nth-child(n + 3) {
+  margin-top: vw-sp(20);
+}
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .post-spconts {
+    margin-left: vw-pc(-13);
+  }
+
+  .post-spconts > li {
+    margin-left: vw-pc(13);
+    width: calc(20% - #{vw-pc(13)});
+  }
+
+  .post-spconts > li:nth-child(n + 6) {
+    margin-top: vw-pc(20);
+  }
+
+  .post-spconts > li a {
+    padding: vw-pc(15) vw-pc(8);
+    border-width: vw-pc(2);
+  }
+
+  .post-spconts .post-image {
+    margin: 0 auto vw-pc(15) auto;
+    width: vw-pc(100);
+    order: 2;
+    img {
+      height: vw-pc(100);
+    }
+  }
+
+  .post-spconts .post-in {
+    order: 2;
+  }
+
+  .post-spconts .post-content {
+    width: 100%;
+    order: 1;
+  }
+
+  .post-spconts .post-title {
+    margin-bottom: .2em;
+    font-size: vw-pc(15);
+    order: 1;
+  }
+
+  .post-spconts .post-desc {
+    margin-bottom: .8em;
+    font-size: vw-pc(13);
+  }
+
+  .post-spconts .post-price {
+    font-size: vw-pc(15);
+    order: 3;
+  }
+
+  .post-spconts .post-time > li {
+    font-size: vw-pc(13);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .post-spconts {
+    margin-left: -13px;
+  }
+
+  .post-spconts > li {
+    margin-left: 13px;
+    width: calc(20% - 13px);
+  }
+
+  .post-spconts > li:nth-child(n + 6) {
+    margin-top: 20px;
+  }
+
+  .post-spconts > li a {
+    padding: 15px 8px;
+    border-width: 2px;
+  }
+
+  .post-spconts .post-image {
+    margin: 0 auto 15px auto;
+    width: 100px;
+    img {
+      height: 100px;
+    }
+  }
+
+  .post-spconts .post-title {
+    font-size: 15px; font-size: 1.5rem;
+  }
+
+  .post-spconts .post-desc {
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .post-spconts .post-price {
+    font-size: 15px; font-size: 1.5rem;
+  }
+
+  .post-spconts .post-time > li {
+    font-size: 13px; font-size: 1.3rem;
+  }
+}
