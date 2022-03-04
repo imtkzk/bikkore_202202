@@ -130,6 +130,39 @@
   font-size: vw-sp(22);
 }
 
+.post--recom02 a {
+  display: block;
+}
+
+.post--recom02 .post-content {
+  width: 100% !important;
+}
+
+.post--recom02 .post-price {
+  margin-top: 1em;
+  text-align: right !important;
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .post--recom02 > li:nth-child(n + 2) {
+    margin-top: vw-sp(20);
+  }
+
+  .post--recom02 .post-desc {
+    color: $color-text;
+  }
+
+  .post--recom02 .post-time {
+    display: flex;
+    color: #888888;
+  }
+
+  .post--recom02 .post-time li:nth-child(n + 2){
+    margin-left: 1em;
+  }
+}
+
 @media screen and (min-width: $breakpoint1) {
 
   .post {

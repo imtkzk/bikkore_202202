@@ -1,0 +1,550 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- everyevery - */
+
+.every-banner {
+  position: relative;
+  margin: 0 auto;
+  padding: vw-sp(40) 0 0 0;
+  width: vw-sp(690);
+}
+
+.every-banner a {
+  display: block;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .every-banner {
+    padding: vw-pc(35) 0;
+    width: vw-pc(1200);
+  }
+
+  .every-banner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+    height: 100%;
+    background-color: $color-base;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .every-banner {
+    padding: 35px 0;
+    width: 1200px;
+  }
+}
+
+.every-main section:nth-child(2) {
+  margin-top: 0 !important;
+}
+
+.every-main-head {
+  display: none;
+}
+
+.every-post {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: vw-sp(-6);
+}
+
+.every-post li {
+  margin-left: vw-sp(6);
+  width: calc(33.33333% - #{vw-sp(6)});
+}
+
+.every-post li a {
+  display: block;
+  padding: vw-sp(35) vw-sp(15);
+  background-color: $color-base;
+}
+
+.every-post-title {
+  margin-bottom: .5em;
+  color: #ff9103;
+  font-size: vw-sp(26);
+  font-weight: 700;
+  line-height: 1.5em;
+  text-align: center;
+  letter-spacing: .05em;
+}
+
+.every-post-image {
+  margin: 0 auto vw-sp(25) auto;
+  width: vw-sp(132);
+  img {
+    @include ofi;
+    height: vw-sp(132);
+  }
+}
+
+.every-post-btc {
+  font-size: vw-sp(22);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.8em;
+  span.red {
+    margin-right: .1em;
+    color: $color-red;
+    font-family: $font2;
+    font-size: 1.86em;
+    font-weight: 800;
+  }
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .every-post li:nth-child(n + 4) {
+    margin-top: vw-sp(20);
+  }
+
+  .every-post-btc {
+    span.red {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .every-main-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: vw-pc(25);
+    height: vw-pc(80);
+    background-color: $color-main;
+    color: $color-base;
+    font-family: $font2;
+    font-size: vw-pc(36);
+    font-weight: 800;
+    letter-spacing: .05em;
+  }
+
+  .every-post {
+    margin-left: vw-pc(-12);
+  }
+
+  .every-post li {
+    margin-left: vw-pc(12);
+    width: calc(20% - #{vw-pc(12)});
+  }
+
+  .every-post li:nth-child(n + 6) {
+    margin-top: vw-pc(10);
+  }
+
+  .every-post li a {
+    padding: vw-pc(20) vw-pc(10) vw-pc(22) vw-pc(10);
+  }
+
+  .every-post-title {
+    font-size: vw-pc(15);
+  }
+
+  .every-post-image {
+    margin: 0 auto vw-pc(10) auto;
+    width: vw-pc(100);
+    img {
+      height: vw-pc(100);
+    }
+  }
+
+  .every-post-btc {
+    font-size: vw-pc(15);
+  }
+
+  .every-service a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: vw-pc(53);
+    height: vw-pc(60);
+    background-color: $color-base;
+    border-radius: vw-pc(5);
+    font-size: vw-pc(13);
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  .every-service a:nth-child(n + 2) {
+    margin-top: vw-pc(10);
+  }
+
+  .every-service a:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+  }
+
+  .every-service--rakuten:before {
+    left: vw-pc(18);
+    width: vw-pc(24);
+    height: vw-pc(32);
+    background-image: url(../img/everyday/rakuten.png);
+    background-image: image-set(url(../img/everyday/rakuten.png) 1x, url(../img/everyday/rakuten-2x.png) 2x);
+    background-image: -webkit-image-set(url(../img/everyday/rakuten.png) 1x, url(../img/everyday/rakuten-2x.png) 2x);
+  }
+
+  .every-service--yahoo:before {
+    left: vw-pc(10);
+    width: vw-pc(39);
+    height: vw-pc(38);
+    background-image: url(../img/everyday/yahoo.png);
+    background-image: image-set(url(../img/everyday/yahoo.png) 1x, url(../img/everyday/yahoo-2x.png) 2x);
+    background-image: -webkit-image-set(url(../img/everyday/yahoo.png) 1x, url(../img/everyday/yahoo-2x.png) 2x);
+  }
+
+  .every-service--dpoint:before {
+    left: vw-pc(17);
+    width: vw-pc(26);
+    height: vw-pc(26);
+    background-image: url(../img/everyday/dpoint.png);
+    background-image: image-set(url(../img/everyday/dpoint.png) 1x, url(../img/everyday/dpoint-2x.png) 2x);
+    background-image: -webkit-image-set(url(../img/everyday/dpoint.png) 1x, url(../img/everyday/dpoint-2x.png) 2x);
+  }
+
+  .every-service--ponta:before {
+    left: vw-pc(11);
+    width: vw-pc(34);
+    height: vw-pc(15);
+    background-image: url(../img/everyday/ponta.png);
+    background-image: image-set(url(../img/everyday/ponta.png) 1x, url(../img/everyday/ponta-2x.png) 2x);
+    background-image: -webkit-image-set(url(../img/everyday/ponta.png) 1x, url(../img/everyday/ponta-2x.png) 2x);
+  }
+
+  .every-service--delivery:before {
+    left: vw-pc(21);
+    width: vw-pc(18);
+    height: vw-pc(22);
+    background-image: url(../img/everyday/delivery.png);
+    background-image: image-set(url(../img/everyday/delivery.png) 1x, url(../img/everyday/delivery-2x.png) 2x);
+    background-image: -webkit-image-set(url(../img/everyday/delivery.png) 1x, url(../img/everyday/delivery-2x.png) 2x);
+  }
+
+  .every-week {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: vw-pc(-5);
+  }
+
+  .every-week li {
+    margin-left: vw-pc(5);
+    width: calc(33.33333% - #{vw-pc(5)});
+  }
+
+  .every-week li:nth-child(n + 4) {
+    margin-top: vw-pc(20);
+  }
+
+  .every-week li a {
+    display: block;
+  }
+
+  .every-week-image {
+    margin: 0 auto vw-pc(10) auto;
+    width: 100%;
+    img {
+      height: vw-pc(65);
+    }
+  }
+
+  .every-week-btc {
+    font-size: vw-pc(13);
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.15em;
+    letter-spacing: 0;
+    span.red {
+      margin-right: .1em;
+      color: $color-red;
+      font-family: $font2;
+      font-size: 1.86em;
+      font-weight: 800;
+    }
+  }
+
+  .every-topic-sechead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: vw-pc(50);
+    background-color: $color-main;
+    color: $color-base;
+    font-family: $font2;
+    font-size: vw-pc(18);
+    font-weight: 800;
+  }
+
+  .every-topic {
+    padding: 0 vw-pc(12) vw-pc(30) vw-pc(12);
+    background-color: $color-base;
+  }
+
+  .every-topic > li {
+    position: relative;
+  }
+
+  .every-topic > li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: vw-pc(-1.5);
+    display: inline-block;
+    width: 100%;
+    height: vw-pc(3);
+    background-image: url(../img/everyday/line.png);
+    background-size: auto vw-pc(3);
+    background-repeat: repeat-x;
+  }
+
+  .every-topic > li a {
+    display: block;
+    padding: vw-pc(20) 0;
+  }
+
+  .every-topic-head {
+    margin-bottom: .5em;
+    color: #ff9103;
+    font-size: vw-pc(13);
+    font-weight: 700;
+    line-height: 1.35em;
+    letter-spacing: .05em;
+  }
+
+  .every-topic-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .every-topic-image {
+    width: vw-pc(50);
+    img {
+      @include ofi;
+      height: vw-pc(50);
+    }
+  }
+
+  .every-topic-content {
+    width: vw-pc(125);
+  }
+
+  .every-topic-sub {
+    font-size: vw-pc(11);
+    font-weight: 700;
+    @include ellipsis;
+  }
+
+  .every-topic-btc {
+    margin-top: vw-pc(20);
+    font-size: vw-pc(11);
+    font-weight: 700;
+    text-align: right;
+    line-height: 1.15em;
+    letter-spacing: 0;
+    span.red {
+      margin-right: .1em;
+      color: $color-red;
+      font-family: $font2;
+      font-size: 1.63em;
+      font-weight: 800;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .every-main-head {
+    margin-bottom: 25px;
+    height: 80px;
+    font-size: 36px; font-size: 3.6rem;
+  }
+
+  .every-post {
+    margin-left: -12px;
+  }
+
+  .every-post li {
+    margin-left: 12px;
+    width: calc(20% - 12px);
+  }
+
+  .every-post li:nth-child(n + 6) {
+    margin-top: 10px;
+  }
+
+  .every-post li a {
+    padding: 20px 10px 22px 10px;
+  }
+
+  .every-post-title {
+    font-size: 15px; font-size: 1.5rem;
+  }
+
+  .every-post-image {
+    margin: 0 auto 10px auto;
+    width: 100px;
+    img {
+      height: 100px;
+    }
+  }
+
+  .every-post-btc {
+    font-size: 15px; font-size: 1.5rem;
+  }
+
+  .every-service a {
+    padding-left: 53px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .every-service a:nth-child(n + 2) {
+    margin-top: 10px;
+  }
+
+  .every-service--rakuten:before {
+    left: 18px;
+    width: 24px;
+    height: 32px;
+  }
+
+  .every-service--yahoo:before {
+    left: 10px;
+    width: 39px;
+    height: 38px;
+  }
+
+  .every-service--dpoint:before {
+    left: 17px;
+    width: 26px;
+    height: 26px;
+  }
+
+  .every-service--ponta:before {
+    left: 11px;
+    width: 34px;
+    height: 15px;
+  }
+
+  .every-service--delivery:before {
+    left: 21px;
+    width: 18px;
+    height: 22px;
+  }
+
+  .every-week {
+    margin-left: -5px;
+  }
+
+  .every-week li {
+    margin-left: 5px;
+    width: calc(33.33333% - 5px);
+  }
+
+  .every-week li:nth-child(n + 4) {
+    margin-top: 20px;
+  }
+
+  .every-week-image {
+    margin: 0 auto 10px auto;
+    img {
+      height: 65px;
+    }
+  }
+
+  .every-week-btc {
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .every-topic-sechead {
+    height: 50px;
+    font-size: 18px; font-size: 1.8rem;
+  }
+
+  .every-topic {
+    padding: 0 12px 30px 12px;
+  }
+
+  .every-topic > li:before {
+    bottom: -1.5px;
+    height: 3px;
+    background-size: auto 3px;
+  }
+
+  .every-topic > li a {
+    padding: 20px 0;
+  }
+
+  .every-topic-head {
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .every-topic-image {
+    width: 50px;
+    img {
+      height: 50px;
+    }
+  }
+
+  .every-topic-content {
+    width: 125px;
+  }
+
+  .every-topic-sub {
+    font-size: 11px; font-size: 1.1rem;
+  }
+
+  .every-topic-btc {
+    margin-top: 20px;
+    font-size: 11px; font-size: 1.1rem;
+  }
+}
+
+.every-caution {
+  margin: 0 auto;
+  width: vw-sp(630);
+}
+
+.every-caution-desc p {
+  font-size: vw-sp(26);
+  line-height: 1.875em;
+}
+
+.every-caution-desc p:nth-child(n + 2) {
+  margin-top: 1.875em;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .every-caution {
+    width: vw-pc(850);
+  }
+
+  .every-caution-desc p {
+    font-size: vw-pc(13);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .every-caution {
+    width: 850px;
+  }
+
+  .every-caution-desc p {
+    font-size: 13px; font-size: 1.3rem;
+  }
+}

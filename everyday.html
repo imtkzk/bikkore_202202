@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>毎日貯める | ビッコレ</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <!-- Fonts Files
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;800;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">-->
+  <!-- CSS Files -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header id="header" class="header">
+    <div class="header-top">
+      <div>
+        <div class="header-top-left">
+          <h1 class="header-logo">
+            <a href="#"><img src="img/common/logo-bk.png" class="img--fit" alt="ビッコレ"></a>
+          </h1>
+          <div class="header-search none--sp">
+            <div class="search">
+              <form action="">
+                <input id="s" name="s" type="text" class="search-input" placeholder="案件を検索">
+                <input type="submit" class="search-btn" value="検索">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="header-top-right">
+          <p class="header-name none--sp">ようこそ<a href="#" class="on--opa">ゲスト</a>さん</p>
+          <div class="header-login">
+            <a href="#" class="login-btn"><span>ログイン</span></a>
+          </div>
+          <div class="header-apply">
+            <a href="#" class="apply-btn apply-btn--green apply-btn--short"><span>無料</span>新規会員登録</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <ul class="header-navi">
+        <li><a href="#" class="header-navi-top"><span>トップ</span></a></li>
+        <li><a href="#" class="header-navi-cat"><span>カテゴリー</span></a></li>
+        <li><a href="#" class="header-navi-recom"><span>おすすめ案件</span></a></li>
+        <li><a href="#" class="header-navi-intro"><span>友達紹介</span></a></li>
+        <li><a href="#" class="header-navi-mypage"><span>マイページ</span></a></li>
+      </ul>
+    </div>
+    <div id="search-modal" class="search-modal">
+      <div class="search-modal-overlay modal-close-btn"></div>
+      <div class="search-modal-scroll">
+        <div class="search-modal-box">
+          <div class="modal-close-top-btn modal-close-btn"></div>
+          <div class="search-modal-content">
+            <div class="search-modal-search">
+              <div class="search">
+                <form action="">
+                  <input id="s" name="s" type="text" class="search-input" placeholder="案件を検索">
+                  <input type="submit" class="search-btn" value="検索">
+                </form>
+              </div>
+            </div>
+            <div class="search-modal-category">
+              <div class="cmn-head">
+                <h2 class="cmn-head-jp">カテゴリー</h2>
+                <p class="cmn-head-en">category</p>
+              </div>
+              <ul class="category">
+                <li><a href="#">無料案件</a></li>
+                <li><a href="#">無料案件</a></li>
+                <li><a href="#">クレジットカード</a></li>
+                <li><a href="#">クレジットカード</a></li>
+                <li><a href="#">金融・投資</a></li>
+                <li><a href="#">金融・投資</a></li>
+                <li><a href="#">無料案件</a></li>
+                <li><a href="#">無料案件</a></li>
+                <li><a href="#">クレジットカード</a></li>
+                <li><a href="#">クレジットカード</a></li>
+                <li><a href="#">金融・投資</a></li>
+                <li><a href="#">金融・投資</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-close-bottom-btn modal-close-btn">
+            <span>閉じる</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="every-banner">
+      <a href="#" class="on--opa">
+        <picture>
+          <source media="(min-width:751px)" srcset="sample/day-banner.png 1x,sample/day-banner-2x.png 2x">
+          <source media="(max-width:750px)" srcset="sample/day-banner_sp.png">
+          <img src="sample/day-banner.png" class="img--fit" alt="バナー">
+        </picture>
+      </a>
+    </div>
+    <div class="contents">
+      <ul class="breadcrumb">
+        <li><a href="#">トップ</a></li>
+        <li>毎日貯める</li>
+      </ul>
+      <div class="content content--multi content--multi2">
+        <main class="main every-main">
+          <h2 class="every-main-head">毎日貯める</h2>
+          <section>
+            <div class="cmn-head">
+              <h2 class="cmn-head-jp">本日の無料イチオシ！</h2>
+              <p class="cmn-head-en">today</p>
+            </div>
+            <ul class="every-post">
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">ビッコレガチャ</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="ビッコレガチャ">
+                  </div>
+                  <p class="every-post-btc"><span class="red">5</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">アンケート</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="アンケート">
+                  </div>
+                  <p class="every-post-btc"><span class="red">1</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">動画でBTC</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="動画でBTC">
+                  </div>
+                  <p class="every-post-btc"><span class="red">1</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">ビッコレガチャ</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="ビッコレガチャ">
+                  </div>
+                  <p class="every-post-btc"><span class="red">5</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">アンケート</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="アンケート">
+                  </div>
+                  <p class="every-post-btc"><span class="red">5</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">ビッコレガチャ</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="ビッコレガチャ">
+                  </div>
+                  <p class="every-post-btc"><span class="red">5</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">アンケート</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="アンケート">
+                  </div>
+                  <p class="every-post-btc"><span class="red">1</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">動画でBTC</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="動画でBTC">
+                  </div>
+                  <p class="every-post-btc"><span class="red">1</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">ビッコレガチャ</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="ビッコレガチャ">
+                  </div>
+                  <p class="every-post-btc"><span class="red">5</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">アンケート</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="アンケート">
+                  </div>
+                  <p class="every-post-btc"><span class="red">5</span>円相当のBTC</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <div class="cmn-head">
+              <h2 class="cmn-head-jp">人気コンテンツ</h2>
+              <p class="cmn-head-en">populer</p>
+            </div>
+            <ul class="every-post">
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">ビッコレガチャ</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="ビッコレガチャ">
+                  </div>
+                  <p class="every-post-btc"><span class="red">5</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">アンケート</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="アンケート">
+                  </div>
+                  <p class="every-post-btc"><span class="red">1</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">動画でBTC</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="動画でBTC">
+                  </div>
+                  <p class="every-post-btc"><span class="red">1</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">ビッコレガチャ</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="ビッコレガチャ">
+                  </div>
+                  <p class="every-post-btc"><span class="red">5</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">アンケート</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="アンケート">
+                  </div>
+                  <p class="every-post-btc"><span class="red">5</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">ビッコレガチャ</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="ビッコレガチャ">
+                  </div>
+                  <p class="every-post-btc"><span class="red">5</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">アンケート</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="アンケート">
+                  </div>
+                  <p class="every-post-btc"><span class="red">1</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">動画でBTC</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="動画でBTC">
+                  </div>
+                  <p class="every-post-btc"><span class="red">1</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">ビッコレガチャ</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="ビッコレガチャ">
+                  </div>
+                  <p class="every-post-btc"><span class="red">5</span>円相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <h3 class="every-post-title">アンケート</h3>
+                  <div class="every-post-image">
+                    <img src="sample/post.png" class="img--fit" alt="アンケート">
+                  </div>
+                  <p class="every-post-btc"><span class="red">5</span>円相当のBTC</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <div class="every-caution">
+              <div class="cmn-head">
+                <h2 class="cmn-head-jp">注意事項</h2>
+              </div>
+              <div class="every-caution-desc">
+                <p>当ページに掲載しておりますコンテンツにつきましては、スタンプ・コイン・ポイント獲得に関する調査依頼は受け付けておりません。</p>
+                <p>ルール説明ページや注意事項等の記載をお読みいただいたうえでご利用ください。<br>正常に動作しない場合は、キャッシュ・Cookieの消去、別ブラウザでのご利用をお試しください。</p>
+                <p>ウィークリーミッションの対象となるのは「人気定番コンテンツ」のみとなります。<br>ミッション詳細をよくご確認いただいたうえでご利用ください。</p>
+              </div>
+            </div>
+          </section>
+        </main>
+        <aside class="aside none--sp">
+          <div class="aside-item">
+            <div class="cmn-head">
+              <h2 class="cmn-head-jp">定番サービス</h2>
+              <p class="cmn-head-en">service</p>
+            </div>
+            <div class="every-service">
+              <a href="#" class="every-service--rakuten on--opa"><span>楽天サービス一覧</span></a>
+              <a href="#" class="every-service--yahoo on--opa"><span>Yahoo!サービス一覧</span></a>
+              <a href="#" class="every-service--dpoint on--opa"><span>dポイントサービス一覧</span></a>
+              <a href="#" class="every-service--ponta on--opa"><span>Pontaサービス一覧</span></a>
+              <a href="#" class="every-service--delivery on--opa"><span>デリバリーサービス一覧</span></a>
+            </div>
+          </div>
+          <div class="aside-item">
+            <div class="cmn-head">
+              <h2 class="cmn-head-jp">今週のおすすめ</h2>
+              <p class="cmn-head-en">WEEKLY</p>
+            </div>
+            <ul class="every-week">
+              <li>
+                <a href="#" class="on--opa">
+                  <div class="every-week-image">
+                    <img src="sample/post.png" class="img--fit" alt="ビッコレガチャ">
+                  </div>
+                  <p class="every-week-btc"><span class="red">5</span>円<br>相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <div class="every-week-image">
+                    <img src="sample/post.png" class="img--fit" alt="アンケート">
+                  </div>
+                  <p class="every-week-btc"><span class="red">1</span>円<br>相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <div class="every-week-image">
+                    <img src="sample/post.png" class="img--fit" alt="動画でBTC">
+                  </div>
+                  <p class="every-week-btc"><span class="red">1</span>円<br>相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <div class="every-week-image">
+                    <img src="sample/post.png" class="img--fit" alt="ビッコレガチャ">
+                  </div>
+                  <p class="every-week-btc"><span class="red">5</span>円<br>相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <div class="every-week-image">
+                    <img src="sample/post.png" class="img--fit" alt="アンケート">
+                  </div>
+                  <p class="every-week-btc"><span class="red">1</span>円<br>相当のBTC</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="on--opa">
+                  <div class="every-week-image">
+                    <img src="sample/post.png" class="img--fit" alt="動画でBTC">
+                  </div>
+                  <p class="every-week-btc"><span class="red">1</span>円<br>相当のBTC</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="aside-item">
+            <div class="every-topics">
+              <h2 class="every-topic-sechead">TODAY’S TOPIC</h2>
+              <ul class="every-topic">
+                <li>
+                  <a href="#" class="on--opa">
+                    <h3 class="every-topic-head">ビッコレガチャ</h3>
+                    <div class="every-topic-contents">
+                      <div class="every-topic-image">
+                        <img src="sample/post.png" class="img--fit" alt="ビッコレガチャ">
+                      </div>
+                      <div class="every-topic-content">
+                        <p class="every-topic-sub">IT製品のレビュー投...</p>
+                        <p class="every-topic-btc"><span class="red">5</span>円相当のBTC</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="on--opa">
+                    <h3 class="every-topic-head">アンケート</h3>
+                    <div class="every-topic-contents">
+                      <div class="every-topic-image">
+                        <img src="sample/post.png" class="img--fit" alt="アンケート">
+                      </div>
+                      <div class="every-topic-content">
+                        <p class="every-topic-sub">IT製品のレビュー投...</p>
+                        <p class="every-topic-btc"><span class="red">1</span>円相当のBTC</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="on--opa">
+                    <h3 class="every-topic-head">動画でBTC</h3>
+                    <div class="every-topic-contents">
+                      <div class="every-topic-image">
+                        <img src="sample/post.png" class="img--fit" alt="動画でBTC">
+                      </div>
+                      <div class="every-topic-content">
+                        <p class="every-topic-sub">IT製品のレビュー投...</p>
+                        <p class="every-topic-btc"><span class="red">1</span>円相当のBTC</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-navi">
+        <div>
+          <p class="footer-navi-head">ポイントを貯める</p>
+          <ul class="footer-navi-list">
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">無料案件</a></li>
+            <li><a href="#">高額案件</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-navi-head">ポイントを管理</p>
+          <ul class="footer-navi-list">
+            <li><a href="#">ユーザー登録</a></li>
+            <li><a href="#">ログイン</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-navi-head">サポート</p>
+          <ul class="footer-navi-list">
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-spnavi">
+        <a href="#">ヘルプ</a>
+        <a href="#">利用規約</a>
+        <a href="#">プライバシーポリシー</a>
+        <a href="#">会社概要</a>
+        <a href="#">お問い合わせ</a>
+      </div>
+      <div class="footer-subnavi">
+        <a href="#">PC版を表示</a>
+        <a href="#">ログアウト</a>
+      </div>
+      <div class="footer-logo">
+        <img src="img/common/logo-wh.png" class="img--fit" alt="ビッコレ">
+      </div>
+      <div class="footer-subnavi">
+        <a href="#">広告掲載について</a>
+      </div>
+    </div>
+    <div class="floating">
+      <div class="floating-btns">
+        <a href="#" class="floating-btn--top"><span>トップ</span></a>
+        <a href="" id="search-btn" class="floating-btn--search" data-target="search-modal"><span>探す</span></a>
+        <a href="#" class="floating-btn--recom"><span>おすすめ</span></a>
+        <a href="#" class="floating-btn--intro"><span>友達紹介</span></a>
+        <a href="#" class="floating-btn--mypage"><span>マイページ</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <script>document.write(new Date().getFullYear());</script> Bikkore</p>
+    </div>
+  </footer>
+  <!--   JS Files   -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/lib/ofi.js"></script>
+  <script src="js/lib/picturefill.js"></script>
+  <script src="js/lib/pf.intrinsic.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- movie - */
+
+.movie-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: vw-sp(85);
+  height: vw-sp(160);
+  background-color: $color-main;
+  color: $color-base;
+  font-family: $font2;
+  font-size: vw-sp(56);
+  font-weight: 800;
+  letter-spacing: .05em;
+}
+
+.movie {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: vw-sp(-30);
+}
+
+.movie > li {
+  margin-left: vw-sp(30);
+  width: calc(50% - #{vw-sp(30)});
+  background-color: $color-base;
+}
+
+.movie-content {
+  padding: vw-sp(35) vw-sp(20);
+}
+
+.movie-title {
+  color: #ff9103;
+font-size: vw-sp(30);
+  font-weight: 700;
+  line-height: 1.5em;
+  letter-spacing: .05em;
+}
+
+.movie-price {
+  margin-top: vw-sp(20);
+  font-size: vw-sp(36);
+  font-weight: 700;
+  text-align: right;
+  span.red {
+    margin-right: .1em;
+    color: $color-red;
+    font-family: $font2;
+    font-size: 2em;
+    font-weight: 800;
+  }
+}
+
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .movie-head {
+    margin-left: vw-sp(-30);
+    width: vw-sp(750);
+  }
+
+  .movie > li:nth-child(n + 3) {
+    margin-top: vw-sp(40);
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .movie-head {
+    margin-bottom: vw-pc(30);
+    height: vw-pc(80);
+    font-size: vw-pc(36);
+  }
+
+  .movie {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: vw-pc(-20);
+  }
+
+  .movie > li {
+    margin-left: vw-pc(20);
+    width: calc(33.33333% - #{vw-pc(20)});
+  }
+
+  .movie > li:nth-child(n + 4) {
+    margin-top: vw-pc(25);
+  }
+
+  .movie-content {
+    padding: vw-pc(25) vw-pc(30);
+  }
+
+  .movie-title {
+  font-size: vw-pc(18);
+  }
+
+  .movie-price {
+    margin-top: vw-pc(15);
+    font-size: vw-pc(18);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .movie-head {
+    margin-bottom: 30px;
+    height: 80px;
+    font-size: 36px; font-size: 3.6rem;
+  }
+
+  .movie {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+  }
+
+  .movie > li {
+    margin-left: 20px;
+    width: calc(33.33333% - 20px);
+  }
+
+  .movie > li:nth-child(n + 4) {
+    margin-top: 25px;
+  }
+
+  .movie-content {
+    padding: 25px 30px;
+  }
+
+  .movie-title {
+  font-size: 18px; font-size: 1.8rem;
+  }
+
+  .movie-price {
+    margin-top: 15px;
+    font-size: 18px; font-size: 1.8rem;
+  }
+}

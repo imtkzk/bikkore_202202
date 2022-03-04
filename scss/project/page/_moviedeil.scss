@@ -1,0 +1,218 @@
+// main: ../../style.scss
+
+/* ------------------------------------------- moviedeil - */
+
+.moviedeil {
+  padding: vw-sp(60) vw-sp(30);
+  background-color: $color-base;
+}
+
+.moviedeil-image {
+  margin-bottom: vw-sp(55);
+}
+
+.moviedeil-content {
+  margin-bottom: vw-sp(70);
+}
+
+.moviedeil-title {
+  margin-bottom: .8em;
+  padding-bottom: .5em;
+  border-bottom: 1px solid $color-main;
+  font-size: vw-sp(40);
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+.moviedeil-sub {
+  margin-bottom: .8em;
+  font-size: vw-sp(32);
+  font-weight: 700;
+  line-height: 1.8em;
+}
+
+.moviedeil-time {
+  color: #888;
+  font-size: vw-sp(32);
+  line-height: 1.8em;
+}
+
+.moviedeil-price {
+  margin-top: vw-sp(30);
+  font-size: vw-sp(36);
+  font-weight: 700;
+  text-align: right;
+  span.red {
+    margin-right: .2em;
+    color: $color-red;
+    font-family: $font2;
+    font-size: 2.66em;
+    font-weight: 800;
+  }
+}
+
+.moviedeil-descs > div:nth-child(n + 2){
+  margin-top: vw-sp(60);
+}
+
+.moviedeil-desc p {
+  font-size: vw-sp(26);
+  line-height: 1.8em;
+}
+
+.moviedeil-desc p:nth-child(n + 2){
+  margin-top: 1.5em;
+}
+
+.moviedeil-subdesc-box {
+  padding: 1.5em;
+  background-color: $color-base;
+  border: 1px solid $color-main;
+}
+
+.moviedeil-subdesc-box p {
+  font-size: vw-sp(26);
+  line-height: 1.8em;
+}
+
+.moviedeil-subdesc-box p:nth-child(n + 2) {
+  margin-top: 1.5em;
+}
+
+.moviedeil-list li {
+  position: relative;
+  padding-left: vw-sp(40);
+  font-size: vw-sp(26);
+  line-height: 1.8em;
+}
+
+.moviedeil-list li:before {
+  content: '';
+  position: absolute;
+  top: .5em;
+  left: 0;
+  width: vw-sp(20);
+  height: vw-sp(20);
+  background-color: $color-main;
+  border-radius: 50%;
+}
+
+.moviedeil-list li:nth-child(n + 2) {
+  margin-top: 1.5em;
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .moviedeil {
+    margin-left: vw-sp(-30);
+    width: vw-sp(750);
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .moviedeil {
+    padding: vw-pc(40);
+  }
+
+  .moviedeil-image {
+    margin-bottom: vw-pc(25);
+  }
+
+  .moviedeil-content {
+    margin-bottom: vw-pc(40);
+  }
+
+  .moviedeil-title {
+    font-size: vw-pc(24);
+  }
+
+  .moviedeil-sub {
+    font-size: vw-pc(16);
+  }
+
+  .moviedeil-time {
+    font-size: vw-pc(16);
+  }
+
+  .moviedeil-price {
+    margin-top: vw-pc(15);
+    font-size: vw-pc(18);
+  }
+
+  .moviedeil-descs > div:nth-child(n + 2){
+    margin-top: vw-pc(60);
+  }
+
+  .moviedeil-desc p {
+    font-size: vw-pc(13);
+  }
+
+  .moviedeil-subdesc-box p {
+    font-size: vw-pc(13);
+  }
+
+  .moviedeil-list li {
+    padding-left: vw-pc(20);
+    font-size: vw-pc(13);
+  }
+
+  .moviedeil-list li:before {
+    width: vw-pc(10);
+    height: vw-pc(10);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .moviedeil {
+    padding: 40px;
+  }
+
+  .moviedeil-image {
+    margin-bottom: 25px;
+  }
+
+  .moviedeil-content {
+    margin-bottom: 40px;
+  }
+
+  .moviedeil-title {
+    font-size: 24px; font-size: 2.4rem;
+  }
+
+  .moviedeil-sub {
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .moviedeil-time {
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .moviedeil-price {
+    margin-top: 15px;
+    font-size: 18px; font-size: 1.8rem;
+  }
+
+  .moviedeil-descs > div:nth-child(n + 2){
+    margin-top: 60px;
+  }
+
+  .moviedeil-desc p {
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .moviedeil-subdesc-box p {
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .moviedeil-list li {
+    padding-left: 20px;
+    font-size: 13px; font-size: 1.3rem;
+  }
+
+  .moviedeil-list li:before {
+    width: 10px;
+    height: 10px;
+  }
+}
