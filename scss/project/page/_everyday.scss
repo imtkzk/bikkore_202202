@@ -62,6 +62,7 @@
 
 .every-post li a {
   display: block;
+  height: vw-sp(400);
   padding: vw-sp(35) vw-sp(15);
   background-color: $color-base;
 }
@@ -142,6 +143,7 @@
   }
 
   .every-post li a {
+    height: vw-pc(230);
     padding: vw-pc(20) vw-pc(10) vw-pc(22) vw-pc(10);
   }
 
@@ -385,6 +387,7 @@
   }
 
   .every-post li a {
+    height: 400px;
     padding: 20px 10px 22px 10px;
   }
 
