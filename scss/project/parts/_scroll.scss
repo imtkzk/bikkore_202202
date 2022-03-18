@@ -6,7 +6,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin: 0 0 vw-sp(30) vw-sp(-30) !important;
+  margin: 0 0 vw-sp(20) vw-sp(-20) !important;
   padding: 0 vw-sp(30);
   height: vw-sp(90);
   background-color: $color-base;
@@ -39,7 +39,7 @@
 }
 
 .scroll-menu-prev,
-.scroll-menu-next, {
+.scroll-menu-next {
   position: absolute;
   top: 50%;
   display: block;
@@ -89,26 +89,26 @@
 }
 
 .scroll-head {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
-  height: vw-sp(100);
+  height: vw-sp(80);
   background-color: $color-main;
   border-radius: vw-sp(10) vw-sp(10) 0 0;
   color: $color-base;
-  font-size: vw-sp(48);
+  font-size: vw-sp(36);
   font-weight: 700;
 }
 
 .scroll-rank {
-  padding: vw-sp(30) vw-sp(30) vw-sp(30) vw-sp(30);
+  padding: vw-sp(20) vw-sp(30) vw-sp(20) vw-sp(30);
   background-color: $color-base;
 }
 
 .scroll-rank > li {
   position: relative;
   display: block;
-  padding: vw-sp(40) 0;
+  padding: vw-sp(20) 0;
 }
 
 .scroll-rank > li:after {
@@ -187,8 +187,8 @@
 }
 
 .scroll-rank-sub {
-  margin-bottom: 1em;
-  font-size: vw-sp(22);
+  margin-bottom: .5em;
+  font-size: vw-sp(20);
   font-weight: 400;
   line-height: 1.38em;
 }
@@ -202,7 +202,7 @@
     margin-right: .1em;
     color: $color-red;
     font-family: $font2;
-    font-size: vw-sp(48);
+    font-size: vw-sp(36);
     font-weight: 800;
   }
 }
@@ -270,7 +270,7 @@
   }
 
   .scroll-menu-prev,
-  .scroll-menu-next, {
+  .scroll-menu-next {
     position: absolute;
     top: 50%;
     display: block;
@@ -308,6 +308,7 @@
   }
 
   .scroll-head {
+    display: flex;
     height: vw-pc(50);
     border-radius: vw-pc(10) vw-pc(10) 0 0;
     font-size: vw-pc(24);
@@ -407,7 +408,7 @@
   }
 
   .scroll-menu-prev,
-  .scroll-menu-next, {
+  .scroll-menu-next {
     width: 25px;
     height: 45px;
     border-radius: 10px 0 0 10px;
