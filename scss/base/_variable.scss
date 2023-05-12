@@ -18,12 +18,12 @@ $sp-width: 750;
 $pc-width: 1440;
 
 @function vw-sp($size, $viewport:750) {
-  $rate: 100 / $viewport;
+  $rate:100 / $viewport;
   @return $rate * $size * 1vw;
 }
 
 @function vw-pc($size, $viewport:1440) {
-  $rate: 100 / $viewport;
+  $rate:100 / $viewport;
   @return $rate * $size * 1vw;
 }
 
